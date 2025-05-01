@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 ---
 <h2>My Public GitHub Repositories</h2>
 <ul id="repoList">
