@@ -1,0 +1,58 @@
+---
+layout: page
+title: Skills & Tools
+nav_order: 3
+---
+
+<div class="skills-page">
+  <div class="skills-container">
+    {% assign all_skills = "" | split: "" %}
+    {% for project in site.data.projects %}
+      {% assign skills_array = project.skills | split: "," %}
+      {% for skill in skills_array %}
+        {% assign clean_skill = skill | strip %}
+        {% unless all_skills contains clean_skill %}
+          {% assign all_skills = all_skills | push: clean_skill %}
+        {% endunless %}
+      {% endfor %}
+    {% endfor %}
+    {% assign all_skills = all_skills | sort %}
+
+    <div>
+      {% for skill in all_skills %}
+        <a href="/projects.html?skill={{ skill | slugify }}" class="skill-link">#&nbsp;{{ skill }}</a>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+<style>
+  .skills-page {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    text-align: center;
+  }
+
+  .skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+  }
+
+  .skill-link {
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 5px;
+    text-decoration: none;
+    /* border: 1px solid #ddd;
+    border-radius: 20px;
+    background-color: #f9f9f9; */
+    color: #003cff;
+    font-size: 1.2em;
+  }
+
+  .skill-link:hover {
+    background-color: #eee;
+  }
+</style>
