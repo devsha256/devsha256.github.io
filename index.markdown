@@ -6,11 +6,6 @@ layout: page
   <li>Loading repositories...</li>
 </ul>
 
-<h2>My Contribution to Organizaiton Repostories</h2>
-<ul id="orgRepoList">
-    <li>Loading repositories...</li>
-</ul>
-
 <script>
     async function fetchGitHubRepos(username, id) {
         try {
@@ -28,6 +23,5 @@ layout: page
 
     document.addEventListener("DOMContentLoaded", () => {
         fetchGitHubRepos("devsha256", "repoList");
-        fetchGitHubRepos("abc-mule-ltd","orgRepoList");
     });
 </script>
