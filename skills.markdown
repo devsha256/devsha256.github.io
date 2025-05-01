@@ -1,6 +1,7 @@
 ---
-layout: page
+layout: default
 title: Skills & Tools
+permalink: /skills/
 nav_order: 3
 ---
 
@@ -20,7 +21,7 @@ nav_order: 3
 
     <div>
       {% for skill in all_skills %}
-        <a href="/projects.html?skill={{ skill | slugify }}" class="skill-link">#&nbsp;{{ skill }}</a>
+        <a href="/projects?skill={{ skill | slugify }}" class="skill-link">#&nbsp;{{ skill }}</a>
       {% endfor %}
     </div>
   </div>

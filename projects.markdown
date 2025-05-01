@@ -1,10 +1,10 @@
 ---
 layout: default
 title: Projects
+permalink: /projects/
 ---
 
 <div class="projects">
-  <h1>Projects</h1>
 
   <div class="pagination" id="pagination-top">
     <button id="prev-button" disabled>Previous</button>
@@ -41,7 +41,7 @@ title: Projects
   }
 
   .project-item {
-    border: 1px solid #ddd;
+    /* border: 1px solid #ddd; */
     margin-bottom: 20px;
     padding: 10px;
     display: none;

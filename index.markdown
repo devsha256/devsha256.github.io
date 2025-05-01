@@ -1,27 +1,35 @@
 ---
 layout: default
+permalink: /
 ---
-<h2>My Public GitHub Repositories</h2>
-<ul id="repoList">
-  <li>Loading repositories...</li>
-</ul>
+
+<h1>Hi there! 👋</h1>
+
+<p>
+  With over <strong><span id="yearsOfExperience"></span></strong> years of experience specializing in API integration, particularly with technologies like MuleSoft, I have developed strong skills in software development. Along the way, I've earned industry-recognized certifications, including those in MuleSoft Development and Anypoint Platform Architecture. While MuleSoft has been central to my career, my experience extends beyond it. In my current organization, I am also an "Elevated Wings1 Certified - Full-Stack JavaScript Developer (MERN)," a program that deepened my expertise in integration patterns using JavaScript.
+</p>
+<p>
+    Automation has been key to my success, especially in testing, whether it’s unit or integration testing. I'm familiar with various architectural patterns, including ETL, real-time, and asynchronous Pub/Sub models. If you know of any projects or teams that could benefit from my skills, please feel free to connect!
+</p>
+
+---
+
+<div style="font-size: 1.5em; line-height: 2em;">
+  <p><a href="/projects"># Check My Projects</a></p>
+  <p><a href="/certifications"># View My Certifications</a></p>
+  <p><a href="/repos"># Browse My GitHub Repos</a></p>
+</div>
+
+---
 
 <script>
-    async function fetchGitHubRepos(username, id) {
-        try {
-            let response = await fetch(`https://api.github.com/users/${username}/repos`);
-            let repos = await response.json();
-            if (Array.isArray(repos)) {
-                let repoListHTML = repos.map(repo => `<li><a href="${repo.html_url}" target="_blank">${repo.name}</a></li>`).join('');
-                document.getElementById(id).innerHTML = repoListHTML;
-            }
-        } catch (error) {
-            console.error("Error fetching GitHub repos:", error);
-            document.getElementById(id).innerHTML = "<li>Failed to load repositories</li>";
-        }
-    }
-
-    document.addEventListener("DOMContentLoaded", () => {
-        fetchGitHubRepos("devsha256", "repoList");
-    });
+function calculateExperience() {
+  const startDate = new Date("2020-02-24");
+  const now = new Date();
+  const months = (now.getFullYear() - startDate.getFullYear()) * 12 + now.getMonth() - startDate.getMonth();
+  const years = Math.floor(months / 12);
+  const remMonths = months % 12;
+  document.getElementById("yearsOfExperience").innerText = `${years}.${remMonths.toString().padStart(2, '0')}`;
+}
+document.addEventListener("DOMContentLoaded", calculateExperience);
 </script>
