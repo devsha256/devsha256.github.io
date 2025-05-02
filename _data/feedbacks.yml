@@ -1,0 +1,47 @@
+- name: Service & Commitment Award (5 years)
+  authority: TCS
+  date: 2025-02-24
+  credential_id: service-and-commitment-5-years
+  image: tcs.png # Add the image filename
+  cred_link: https://www.tcs.com/
+  drive_link: https://drive.google.com/file/d/1C7EHx43UYkV-SFe6v8wwnsmMXRv4_iS-/view?usp=sharing 
+
+- name: Service & Commitment Award (3 years)
+  authority: TCS
+  date: 2023-02-24
+  credential_id: service-and-commitment-3-years
+  image: tcs.png # Add the image filename
+  cred_link: https://www.tcs.com/
+  drive_link: https://drive.google.com/file/d/1UrngsoUXEr3f_5DrjJ5Fm0cEk9zsY98W/view?usp=sharing
+
+- name: Contextual Master (Life Science)
+  authority: TCS
+  date: 2024-02-08
+  credential_id: TCS Contextual Master, 2024
+  image: tcs.png # Add the image filename
+  cred_link: https://www.tcs.com/
+  drive_link: https://drive.google.com/file/d/1qxQZNcBmN7hO4YOaJ2X_-xfnhb1jl6-H/view?usp=sharing
+
+- name: Star of the Quarter, [Q3-2022]
+  authority: TCS
+  date: 2022-10-26
+  credential_id: TCS Star of the Quarter, 2022
+  image: tcs.png # Add the image filename
+  cred_link: https://www.tcs.com/
+  drive_link: https://drive.google.com/file/d/1PM_3P2QnBCNoL_HHInM_1Y1oDk9R8UcM/view?usp=sharing
+
+- name: Star of the Month, [April-2022]
+  authority: TCS
+  date: 2022-04-01
+  credential_id: TCS Star of the Month, 04-2022
+  image: tcs.png # Add the image filename
+  cred_link: https://www.tcs.com/
+  drive_link: https://drive.google.com/file/d/1ZhndibmOfqbQ7AKVraI1Jm_D1KugrJag/view?usp=sharing
+
+- name: Smile(s) Award [August-2024]
+  authority: TCS
+  date: 2024-08-05
+  credential_id: TCS HR Rewards
+  image: tcs.png # Add the image filename
+  cred_link: https://www.tcs.com/
+  drive_link: https://drive.google.com/file/d/11Te_GNqJL8fZ3MB0hMeoyRQDZ6yyEwS5/view?usp=sharing

@@ -4,7 +4,15 @@
   credential_id: MCD-L1
   image: mcd-l1.png # Add the image filename
   cred_link: https://trailhead.salesforce.com/en/credentials/mulesoftdeveloperi
-  drive_link: 
+  drive_link: https://drive.google.com/file/d/1cAl0wKfa52RsGZ9ns6tMV3kiFRwZrfhK/view?usp=sharing
+
+- name: MuleSoft Certified Developer - Level 1 (Maintenance)
+  authority: MuleSoft
+  date: 2022-06-04
+  credential_id: MCD-L1 (Maintenance)
+  image: mcd-l1.png # Add the image filename
+  cred_link: https://trailhead.salesforce.com/en/credentials/mulesoftdeveloperi
+  drive_link: https://drive.google.com/file/d/1yxDdGLc0pceGgSeosuUJrsz4GgTEPlfp/view?usp=sharing
 
 - name: AWS Certified Cloud Practitioner
   authority: Amazon Web Services
@@ -29,3 +37,11 @@
   image: mcpa-l1.png
   cred_link: https://trailhead.salesforce.com/en/credentials/mulesoftplatformarchitecti
   drive_link: https://drive.google.com/file/d/1qE_ig0FMgPYfBSS0Lf_wlYqPDZIkz-tM/view?usp=sharing
+
+- name: Edureka Certified Solution Architect (Microservices)
+  authority: Edureka
+  date: 2021-09-08
+  credential_id: XJ9QVA5R
+  image: edureka.png
+  cred_link: #
+  drive_link: https://drive.google.com/file/d/1GrH749RrkIeqtLHUp8mMGTpp0Sdw9ZLM/view?usp=sharing

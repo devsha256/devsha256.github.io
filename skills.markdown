@@ -27,11 +27,21 @@ nav_order: 3
       {% endfor %}
     </div>
   </div>
+  <div class="instruction" style="position: fixed; bottom: 0; left: 0; width: 100%; background-color: #f8f8f8; color: #555; padding: 10px; text-align: center; z-index: 1000; animation: ziggle 0.5s infinite alternate;">Click on a tag to see projects where skill is used.</div>
+
 </div>
 
 <div class="circle" id="circleEffect"></div>
 
 <style>
+  @keyframes ziggle {
+    0% {
+      transform: translateX(-5px);
+    }
+    100% {
+      transform: translateX(5px);
+    }
+  }
   .skills-page {
     font-family: Arial, sans-serif;
     margin: 20px;

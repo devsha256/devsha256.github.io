@@ -1,7 +1,8 @@
 ---
 layout: default
-title: Certifications
-permalink: /certifications/
+title: Credentials - Certifications
+permalink: /credentials/certifications/
+nav_include: no
 ---
 
 <div class="certifications">
@@ -13,7 +14,7 @@ permalink: /certifications/
   </div>
 
   <ul class="certification-list">
-    {% assign sorted_certifications = site.data.certifications | sort: 'date' %}
+    {% assign sorted_certifications = site.data.certifications | sort: 'date' | reverse %}
     {% for cert in sorted_certifications %}
     <li class="certification-item" id="cert-{{ forloop.index }}">
       <a href="{{cert.cred_link}}" target="_blank">
@@ -39,6 +40,7 @@ permalink: /certifications/
     </li>
     {% endfor %}
   </ul>
+    <div class="instruction" style="position: fixed; bottom: 0; left: 0; width: 100%; background-color: #f8f8f8; color: #555; padding: 10px; text-align: center; z-index: 1000; animation: ziggle 0.5s infinite alternate;">Click on the verify star to see a live document.</div>
 </div>
 
 <style>
@@ -109,6 +111,22 @@ permalink: /certifications/
   .stars-container:hover .star {
     fill: gold;
   }
+  @keyframes ziggle {
+    0% {
+      transform: translateX(-5px);
+    }
+    100% {
+      transform: translateX(5px);
+    }
+  }
+
+  .star-animated {
+    animation: ziggle 0.5s infinite alternate;
+  }
+
+  .star-paused {
+    animation-play-state: paused;
+  }
 </style>
 
 <script>
@@ -118,6 +136,18 @@ permalink: /certifications/
     const nextButton = document.getElementById("next-button");
     const currentPageSpan = document.getElementById("current-page");
     const totalPagesSpan = document.getElementById("total-pages");
+    const instructionDiv = document.querySelector('.instruction');
+    const starElements = document.querySelectorAll('.stars svg'); // Select all star SVGs
+
+    starElements.forEach(star => {
+      star.addEventListener('mouseenter', () => {
+        instructionDiv.style.animationPlayState = 'paused';
+      });
+
+      star.addEventListener('mouseleave', () => {
+        instructionDiv.style.animationPlayState = 'running';
+      });
+    });
 
     let currentPage = 1;
     const totalPages = items.length;

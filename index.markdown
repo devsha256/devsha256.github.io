@@ -16,7 +16,7 @@ permalink: /
 
 <div style="font-size: 1.5em; line-height: 1.5em;">
   <p><a href="/projects">#[ Check My Projects ]</a></p>
-  <p><a href="/certifications">#[ View My Certifications ]</a></p>
+  <p><a href="/credentials">#[ View My Credentials ]</a></p>
   <p><a href="/repos">#[ Browse My GitHub Repos ]</a></p>
   <p>
     <a href="/assets/resume.pdf" download>#[ ⬇️ Download </a>/

@@ -6,6 +6,13 @@ baseurl: ""
 url: ""
 github_username:  devsha256
 linkedin_username: "hsaddam"
+youtube_username: "@tea-verse"
 
 # Build settings
 theme: minima
+header_pages:
+  - credentials/index.markdown
+  - skills.markdown
+  - projects.markdown
+  - repos.markdown
+  - notice-period.markdown

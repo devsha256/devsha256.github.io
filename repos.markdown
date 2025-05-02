@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Repos
-permalink: /repos
+title: Repositories
+permalink: /repositories
 ---
 
 <div class="github-repos">
