@@ -45,3 +45,69 @@
   image: tcs.png # Add the image filename
   cred_link: https://www.tcs.com/
   drive_link: https://drive.google.com/file/d/11Te_GNqJL8fZ3MB0hMeoyRQDZ6yyEwS5/view?usp=sharing
+
+- name: Best Team Award
+  authority: TCS
+  date: 2023-06-23
+  credential_id: TCS Best Team Award by Supervisor
+  image: tcs.png # Add the image filename
+  cred_link: https://www.tcs.com/
+  drive_link: https://drive.google.com/file/d/1Z9KJAzYvaYSmsLKF4pGsUJa5pSqR5XMH/view?usp=sharing
+
+- name: On the Spot (Team) Award
+  authority: TCS
+  date: 2024-02-26
+  credential_id: TCS On the Spot (Team) Award by Supervisor
+  image: tcs.png # Add the image filename
+  cred_link: https://www.tcs.com/
+  drive_link: https://drive.google.com/file/d/1I6se8yq6NUxlSRUKJpmH37bsn8eJ3pLt/view?usp=sharing
+
+
+- name: Elevate Wings1 Enthusiast
+  authority: TCS
+  date: 2023-11-27
+  credential_id: TCS Elevate Wings1 (Talent Development Team)
+  image: tcs.png # Add the image filename
+  cred_link: https://www.tcs.com/
+  drive_link: https://drive.google.com/file/d/1f18QNdobNaus06f3MCYU9ebhyoez7vKr/view?usp=sharing
+
+- name: Team Member Feedback
+  authority: TCS
+  date: 2025-01-03
+  credential_id: TCS Gems Appreciation Feedback
+  image: tcs.png # Add the image filename
+  cred_link: https://www.tcs.com/
+  drive_link: https://drive.google.com/file/d/1L_xsRXH_5nrapISkEGzERbiNxvA9odHZ/view?usp=sharing
+
+- name: Team Member Feedback
+  authority: TCS
+  date: 2023-04-12
+  credential_id: TCS Gems Appreciation Feedback
+  image: tcs.png # Add the image filename
+  cred_link: https://www.tcs.com/
+  drive_link: https://drive.google.com/file/d/1kNEWjGB-q1h46VtOCR4wu7nqBhLsuiGK/view?usp=sharing
+
+- name: 360 Degree Feedback Enabler Certificate
+  authority: TCS
+  date: 2023-09-28
+  credential_id: TCS 360 Degree Feedback Team
+  image: tcs.png # Add the image filename
+  cred_link: https://www.tcs.com/
+  drive_link: https://drive.google.com/file/d/1fACnWvwFK8gTZdoH2wYE4y-oDjer108e/view?usp=sharing
+
+
+- name: 360 Degree Feedback Champion Award
+  authority: TCS
+  date: 2023-10-09
+  credential_id: TCS 360 Degree Feedback Team
+  image: tcs.png # Add the image filename
+  cred_link: https://www.tcs.com/
+  drive_link: https://drive.google.com/file/d/1PNO1pA-sMMyRiIfglLjpPET4zVlCgW4w/view?usp=sharing
+  
+- name: Special Initiative Award
+  authority: TCS
+  date: 2024-06-25
+  credential_id: TCS HR Team Award
+  image: tcs.png # Add the image filename
+  cred_link: https://www.tcs.com/
+  drive_link: https://drive.google.com/file/d/1vEzWXtwzr9hov2jwrdsCEm4K60PRNarb/view?usp=sharing

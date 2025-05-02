@@ -6,6 +6,11 @@ nav_include: no
 ---
 
 <div class="archives">
+<div class="search-container">
+  <input type="text" id="search-input" placeholder="Search by name..." />
+  <button id="filter-button" onclick="filterArchives()">Filter</button>
+</div>
+
 
   <div class="pagination">
     <button id="prev-button" disabled>Previous</button>
@@ -43,9 +48,40 @@ nav_include: no
 </div>
 
 <style>
-  body{
-    max-width: 100vmax;
-  }
+.search-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#search-input {
+  width: 60%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+#search-input:focus {
+  border-color: #0073e6;
+}
+
+#filter-button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  font-size: 16px;
+  border: none;
+  background-color: #0073e6;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#filter-button:hover {
+  background-color: #005bb5;
+}
+
   .archives {
     font-family: Arial, sans-serif;
     margin: 20px;
@@ -129,8 +165,15 @@ nav_include: no
       transform: translateX(5px);
     }
   }
-</style>
 
+  .star-animated {
+    animation: ziggle 0.5s infinite alternate;
+  }
+
+  .star-paused {
+    animation-play-state: paused;
+  }
+</style>
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const items = document.querySelectorAll(".archive-item");
@@ -138,47 +181,88 @@ nav_include: no
     const nextButton = document.getElementById("next-button");
     const currentPageSpan = document.getElementById("current-page");
     const totalPagesSpan = document.getElementById("total-pages");
+    const searchInput = document.getElementById("search-input");
+    const filterButton = document.getElementById("filter-button");
+    const instructionBanner = document.querySelector(".instruction");
 
-    const PAGE_SIZE = 6; // 6 items per page
-    const ITEMS_PER_ROW = 3;
-
+    const PAGE_SIZE = 6;
     let currentPage = 1;
-    const totalPages = Math.ceil(items.length / PAGE_SIZE);
 
-    function showPage(pageNumber) {
-      const startIndex = (pageNumber - 1) * PAGE_SIZE;
-      const endIndex = Math.min(startIndex + PAGE_SIZE, items.length);
+    function getVisibleItems() {
+      return Array.from(items).filter(item => item.style.display !== "none");
+    }
 
-      items.forEach((item, i) => {
-        item.style.display = i >= startIndex && i < endIndex ? "block" : "none";
-      });
+    function paginateItems(visibleItems, pageNumber) {
+      currentPage = pageNumber;
+      const totalPages = Math.ceil(visibleItems.length / PAGE_SIZE);
+
+      items.forEach(item => item.style.display = "none");
+      visibleItems.slice((pageNumber - 1) * PAGE_SIZE, pageNumber * PAGE_SIZE).forEach(item => item.style.display = "block");
 
       currentPageSpan.textContent = pageNumber;
       totalPagesSpan.textContent = totalPages;
+
       prevButton.disabled = pageNumber === 1;
-      nextButton.disabled = pageNumber === totalPages;
+      nextButton.disabled = pageNumber >= totalPages;
     }
 
-    function nextPage() {
-      if (currentPage < totalPages) {
-        currentPage++;
-        showPage(currentPage);
+    function filterArchives() {
+      const searchValue = searchInput.value.trim().toLowerCase();
+
+      if (searchValue.length > 0 && searchValue.length < 3) {
+        instructionBanner.textContent = "Search term must be at least 3 characters.";
+        instructionBanner.style.color = "red";
+        return;
+      } else {
+        instructionBanner.textContent = "Click on the verify star to see a live document.";
+        instructionBanner.style.color = "#555";
       }
+
+      let visibleItems = [];
+
+      items.forEach(item => {
+        const name = item.querySelector(".arch-name").textContent.toLowerCase();
+        if (!searchValue || name.includes(searchValue)) {
+          visibleItems.push(item);
+        } else {
+          item.style.display = "none";
+        }
+      });
+
+      updateQueryParam(searchValue);
+      paginateItems(visibleItems, 1);
     }
 
-    function prevPage() {
+    function updateQueryParam(query) {
+      const newUrl = query ? `${window.location.pathname}?search=${encodeURIComponent(query)}` : window.location.pathname;
+      window.history.pushState({ path: newUrl }, "", newUrl);
+    }
+
+    function loadFromQueryParam() {
+      const params = new URLSearchParams(window.location.search);
+      const query = params.get("search");
+      if (query) {
+        searchInput.value = query;
+      }
+      filterArchives();
+    }
+
+    filterButton.addEventListener("click", filterArchives);
+    
+    nextButton.addEventListener("click", function () {
+      const visibleItems = getVisibleItems();
+      if (currentPage < Math.ceil(visibleItems.length / PAGE_SIZE)) {
+        paginateItems(visibleItems, currentPage + 1);
+      }
+    });
+
+    prevButton.addEventListener("click", function () {
+      const visibleItems = getVisibleItems();
       if (currentPage > 1) {
-        currentPage--;
-        showPage(currentPage);
+        paginateItems(visibleItems, currentPage - 1);
       }
-    }
+    });
 
-    nextButton.addEventListener("click", nextPage);
-    prevButton.addEventListener("click", prevPage);
-
-    // Initialize the totalPagesSpan with the correct value
-    totalPagesSpan.textContent = totalPages;
-
-    if (totalPages > 0) showPage(1);
+    loadFromQueryParam();
   });
 </script>

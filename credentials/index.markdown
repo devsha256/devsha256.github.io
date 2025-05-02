@@ -5,7 +5,6 @@ permalink: /credentials/
 ---
 
 <div class="credentials-index-page">
-  <h1 style="text-align: center; color: #333; margin-bottom: 2em;">Credentials</h1>
   <p style="text-align: center; color: #555; margin-bottom: 3em;">Explore my certifications and what others have to say.</p>
   <div style="display: flex; justify-content: center; gap: 30px;">
     <div class="credential-box" style="padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08); transition: transform 0.3s ease-in-out;">
