@@ -169,14 +169,14 @@ permalink: /credentials/feedbacks/
 
     if (totalPages > 0) showPage(0);
 
-        starElements.forEach(star => {
-      star.addEventListener('mouseenter', () => {
-        instructionDiv.style.animationPlayState = 'paused';
-      });
+      starElements.forEach(star => {
+        star.addEventListener('mouseenter', () => {
+          instructionDiv.style.animationPlayState = 'paused';
+        });
 
-      star.addEventListener('mouseleave', () => {
-        instructionDiv.style.animationPlayState = 'running';
-      });
+        star.addEventListener('mouseleave', () => {
+          instructionDiv.style.animationPlayState = 'running';
+        });
     });
   });
 </script>

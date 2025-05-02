@@ -13,7 +13,7 @@ nav_include: no
   </div>
 
   <ul class="archive-grid">
-    {% assign sorted_archives = site.data.archives | sort: 'date' %}
+    {% assign sorted_archives = site.data.archives | sort: 'date' | reverse %}
     {% for arch in sorted_archives %}
     <li class="archive-item" id="arch-{{ forloop.index }}">
       <a href="{{arch.cred_link}}" target="_blank">
@@ -129,14 +129,6 @@ nav_include: no
       transform: translateX(5px);
     }
   }
-
-  .star-animated {
-    animation: ziggle 0.5s infinite alternate;
-  }
-
-  .star-paused {
-    animation-play-state: paused;
-  }
 </style>
 
 <script>
@@ -146,17 +138,6 @@ nav_include: no
     const nextButton = document.getElementById("next-button");
     const currentPageSpan = document.getElementById("current-page");
     const totalPagesSpan = document.getElementById("total-pages");
-    const starElements = document.querySelectorAll('.stars svg'); // Select all star SVGs
-
-    starElements.forEach(star => {
-      star.addEventListener('mouseenter', () => {
-        instructionDiv.style.animationPlayState = 'paused';
-      });
-
-      star.addEventListener('mouseleave', () => {
-        instructionDiv.style.animationPlayState = 'running';
-      });
-    });
 
     const PAGE_SIZE = 6; // 6 items per page
     const ITEMS_PER_ROW = 3;

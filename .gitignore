@@ -6,3 +6,7 @@ _site/
 .bundle/
 vendor/
 .vscode/
+_py/credentials.json
+linkedin/**
+token.json
+token.pickle
