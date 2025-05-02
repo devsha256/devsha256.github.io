@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Notice Period
-permalink: /notice-periods/
+# permalink: /notice-periods/
 ---
 
 <style type="text/css" media="screen">

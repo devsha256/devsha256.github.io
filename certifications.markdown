@@ -13,15 +13,29 @@ permalink: /certifications/
   </div>
 
   <ul class="certification-list">
-    {% for cert in site.data.certifications %}
+    {% assign sorted_certifications = site.data.certifications | sort: 'date' %}
+    {% for cert in sorted_certifications %}
     <li class="certification-item" id="cert-{{ forloop.index }}">
-    <a href="{{cert.cred_link}}">
-      <img src="/assets/img/certifications/{{ cert.image }}" alt="{{ cert.name }}" class="cert-logo" />
-    </a>
+      <a href="{{cert.cred_link}}" target="_blank">
+        <img src="/assets/img/certifications/{{ cert.image }}" alt="{{ cert.name }}" class="cert-logo" />
+      </a>
       <h2 class="cert-name">{{ cert.name }}</h2>
       <p><strong>Authority:</strong> {{ cert.authority }}</p>
       <p><strong>Date:</strong> {{ cert.date }}</p>
       <p><strong>Credential ID:</strong> {{ cert.credential_id }}</p>
+      <p class="verify-row">
+        <strong>Verify it live:</strong>
+        <a href="{{ cert.drive_link }}" target="_blank" class="stars-container" title="View Credential">
+          <span class="stars">
+            {% for i in (1..5) %}
+            <svg class="star" viewBox="0 0 24 24" width="26" height="26" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 .587l3.668 7.57L24 9.748l-6 5.848 1.415 8.258L12 19.771l-7.415 4.083L6 15.596 0 9.748l8.332-1.591z" />
+            </svg>
+            
+            {% endfor %}
+          </span>
+        </a>
+      </p>
     </li>
     {% endfor %}
   </ul>
@@ -65,6 +79,35 @@ permalink: /certifications/
     padding: 8px 15px;
     margin: 0 5px;
     cursor: pointer;
+  }
+
+  .verify-row {
+    margin-top: 10px;
+    font-size: 1rem;
+  }
+
+  .stars-container {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    height: 20px;
+  }
+
+  .stars {
+    display: flex;
+    width: 100px;
+    height: 20px;
+  }
+
+  .star {
+    fill: #ccc;
+    transition: fill 0.3s ease;
+    margin: 0 2px;
+  }
+
+  .stars-container:hover .star {
+    fill: gold;
   }
 </style>
 

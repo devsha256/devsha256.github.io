@@ -14,10 +14,16 @@ permalink: /
 
 ---
 
-<div style="font-size: 1.5em; line-height: 2em;">
-  <p><a href="/projects"># Check My Projects</a></p>
-  <p><a href="/certifications"># View My Certifications</a></p>
-  <p><a href="/repos"># Browse My GitHub Repos</a></p>
+<div style="font-size: 1.5em; line-height: 1.5em;">
+  <p><a href="/projects">#[ Check My Projects ]</a></p>
+  <p><a href="/certifications">#[ View My Certifications ]</a></p>
+  <p><a href="/repos">#[ Browse My GitHub Repos ]</a></p>
+  <p>
+    <a href="/assets/resume.pdf" download>#[ ⬇️ Download </a>/
+    <a  target="_blank" href="https://drive.google.com/file/d/19SKiTkoq-ArgmpLu-o5r8y6ZTk0OjDis/view?usp=sharing">
+     View 🌎 My Resume ]
+    </a> 
+  </p>
 </div>
 
 ---

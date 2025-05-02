@@ -1,27 +1,31 @@
 - name: MuleSoft Certified Developer - Level 1
   authority: MuleSoft
-  date: 2020-12
+  date: 2020-12-05
   credential_id: MCD-L1
   image: mcd-l1.png # Add the image filename
   cred_link: https://trailhead.salesforce.com/en/credentials/mulesoftdeveloperi
+  drive_link: 
 
 - name: AWS Certified Cloud Practitioner
   authority: Amazon Web Services
-  date: 2023-08
+  date: 2023-08-21
   credential_id: AWS-CP
   image: aws-cp.png 
   cred_link: https://aws.amazon.com/certification/certified-cloud-practitioner/
+  drive_link: https://drive.google.com/file/d/1Pbjdt3XGjdjRrDADzU3aN-R6WSt8qauq/view?usp=sharing
 
 - name: MuleSoft Certified Developer - Level 2
   authority: MuleSoft
-  date: 2022-07
+  date: 2022-07-31
   credential_id: MCD-L2
   image: mcd-l2.png
   cred_link: https://trailhead.salesforce.com/en/credentials/mulesoftdeveloperii
+  drive_link: https://drive.google.com/file/d/1mFQNC44-mFy6HencHvfibHNN5I-CNlOd/view?usp=sharing
 
 - name: MuleSoft Certified Platform Architect - Level 1
   authority: Oracle
-  date: 2023-12
+  date: 2023-12-14
   credential_id: MCPA-L1
   image: mcpa-l1.png
   cred_link: https://trailhead.salesforce.com/en/credentials/mulesoftplatformarchitecti
+  drive_link: https://drive.google.com/file/d/1qE_ig0FMgPYfBSS0Lf_wlYqPDZIkz-tM/view?usp=sharing
