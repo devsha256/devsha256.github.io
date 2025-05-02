@@ -72,7 +72,7 @@ nav_order: 3
     position: fixed;
     background-color: var(--hover-color);
     border-radius: 50%;
-    width: 95; /* Use vmax to cover both width and height */
+    width: 95vmax; /* Use vmax to cover both width and height */
     height: 95vmax; /* Use vmax to cover both width and height */
     transform: translate(-50%, -50%) scale(0); /* Center the circle */
     transition: transform 0.8s ease-out, background-color 0.3s ease, opacity 0.8s ease-out 5s; /* Add opacity transition with delay */
@@ -84,7 +84,7 @@ nav_order: 3
   }
 
   .circle.active {
-    opacity: 0.5; /* Fade in to 50% opacity */
+    opacity: 0.3; /* Fade in to 30% opacity */
     transform: translate(-50%, -50%) scale(1); /* Scale to cover the page */
     transition: transform 0.8s ease-out, background-color 0.3s ease, opacity 0.8s ease-in; /* Fade in animation */
   }
@@ -119,13 +119,16 @@ nav_order: 3
       // Remove the active class after 5 seconds to trigger fade out
       setTimeout(() => {
         circle.classList.remove('active');
-      }, 1500);
+      }, 5000);
     });
 
 link.addEventListener('mouseleave', () => {
       const circle = document.getElementById('circleEffect');
       // If the mouse leaves before the 5-second timer, remove the active class immediately
       circle.classList.remove('active');
+      // Optionally, reset inline styles if needed
+      // circle.style.removeProperty('--circle-x');
+      // circle.style.removeProperty('--circle-y');
     });
   });
 </script>
