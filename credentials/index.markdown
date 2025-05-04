@@ -6,37 +6,82 @@ permalink: /credentials/
 
 <div class="credentials-index-page">
   <p style="text-align: center; color: #555; margin-bottom: 3em;">Explore my certifications and what others have to say.</p>
-  <div style="display: flex; justify-content: center; gap: 30px;">
-    <div class="credential-box" style="padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08); transition: transform 0.3s ease-in-out;">
-      <h2 style="color: #333; margin-bottom: 1em; text-align: center;">
-        <a href="{{ '/credentials/certifications/' | relative_url }}" style="text-decoration: none; color: inherit;">Certifications</a>
+
+  <div class="credentials-grid">
+    <div class="credential-box">
+      <h2>
+        <a href="{{ '/credentials/certifications/' | relative_url }}">Certifications</a>
       </h2>
-      <p style="color: #555; text-align: center;">View my earned certifications.</p>
-      <a href="{{ '/credentials/certifications/' | relative_url }}" style="display: block; text-align: center; margin-top: 1.5em; color: #007bff; text-decoration: none; transition: color 0.3s ease;">Learn More</a>
+      <p>View my earned certifications.</p>
+      <a href="{{ '/credentials/certifications/' | relative_url }}">Learn More</a>
     </div>
-    <div class="credential-box" style="padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08); transition: transform 0.3s ease-in-out;">
-      <h2 style="color: #333; margin-bottom: 1em; text-align: center;">
-        <a href="{{ '/credentials/feedbacks/' | relative_url }}" style="text-decoration: none; color: inherit;">Feedbacks</a>
+
+    <div class="credential-box">
+      <h2>
+        <a href="{{ '/credentials/feedbacks/' | relative_url }}">Feedbacks</a>
       </h2>
-      <p style="color: #555; text-align: center;">Read what others have to say.</p>
-      <a href="{{ '/credentials/feedbacks/' | relative_url }}" style="display: block; text-align: center; margin-top: 1.5em; color: #007bff; text-decoration: none; transition: color 0.3s ease;">See Feedbacks</a>
+      <p>Read what others have to say.</p>
+      <a href="{{ '/credentials/feedbacks/' | relative_url }}">See Feedbacks</a>
     </div>
-    <div class="credential-box" style="padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08); transition: transform 0.3s ease-in-out;">
-      <h2 style="color: #333; margin-bottom: 1em; text-align: center;">
-        <a href="{{ '/credentials/archives/' | relative_url }}" style="text-decoration: none; color: inherit;">History of Learning</a>
+
+    <div class="credential-box">
+      <h2>
+        <a href="{{ '/credentials/archives/' | relative_url }}">History of Learning</a>
       </h2>
-      <p style="color: #555; text-align: center;">Glance at my history of learning.</p>
-      <a href="{{ '/credentials/archives/' | relative_url }}" style="display: block; text-align: center; margin-top: 1.5em; color: #007bff; text-decoration: none; transition: color 0.3s ease;">Learn More</a>
+      <p>Glance at my history of learning.</p>
+      <a href="{{ '/credentials/archives/' | relative_url }}">Learn More</a>
     </div>
   </div>
 </div>
 
 <style>
+  .credentials-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  .credential-box {
+    flex: 1 1 250px;
+    max-width: 300px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+  }
+
+  .credential-box h2 {
+    color: #333;
+    margin-bottom: 1em;
+  }
+
+  .credential-box a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .credential-box a:hover {
+    color: #0056b3;
+  }
+
   .credential-box:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
   }
-  .credential-box a:hover {
-    color: #0056b3;
+
+  @media (max-width: 768px) {
+    .credentials-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .credential-box {
+      width: 90%;
+      max-width: none;
+    }
   }
 </style>
