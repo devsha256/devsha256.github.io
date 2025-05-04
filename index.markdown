@@ -17,10 +17,10 @@ permalink: /
 <div style="font-size: 1.5em; line-height: 1.5em;">
   <p><a href="/projects">#[ Check My Projects ]</a></p>
   <p><a href="/credentials">#[ View My Credentials ]</a></p>
-  <p><a href="/repos">#[ Browse My GitHub Repos ]</a></p>
+  <p><a href="/repositories">#[ Browse My GitHub Repos ]</a></p>
   <p>
     <a href="/assets/resume.pdf" download>#[ ⬇️ Download </a>/
-    <a  target="_blank" href="https://drive.google.com/drive/u/0/folders/1qyy3tsfxnUHBMlH4toR80kmF8JcdiDJs">
+    <a  target="_blank" href="https://drive.google.com/file/d/1HqgHimaWWq0d6bTVEAHOlKftVPfpmwsI/view?usp=sharing">
      View 🌎 My Resume ]
     </a> 
   </p>

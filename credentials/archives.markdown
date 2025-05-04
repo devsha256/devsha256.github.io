@@ -4,7 +4,7 @@ title: Credentials - Archives
 permalink: /credentials/archives/
 nav_include: no
 ---
-
+<link rel="stylesheet" href="/assets/css/archive.css">
 <div id="archive-root"></div>
 
 <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
@@ -49,25 +49,57 @@ nav_include: no
       if (!query || query.length < 3) return archives;
 
       let result = archives;
+      const params = query.split(",").map(param => param.trim());
 
-      const nameMatch = query.match(/^name:(.*)$/);
-      const dateMatch = query.match(/^date:(\d{4}-\d{2}-\d{2})$/);
-      const authMatch = query.match(/^authority:(.*)$/);
+      let nameTerms = [];
+      let authorityTerms = [];
+      let dateValues = [];
 
-      if (nameMatch) {
-        const term = nameMatch[1].trim();
-        result = archives.filter(a => a.name.toLowerCase().includes(term));
-      } else if (authMatch) {
-        const term = authMatch[1].trim();
-        result = archives.filter(a => a.authority.toLowerCase().includes(term));
-      } else if (dateMatch) {
-        const fromDate = new Date(dateMatch[1]);
-        result = archives.filter(a => new Date(a.date) >= fromDate);
-      } else {
-        result = archives.filter(a => a.name.toLowerCase().includes(query));
+      params.forEach(param => {
+        const nameMatch = param.match(/^name:(.*)$/);
+        const dateMatch = param.match(/^date:(\d{4}-\d{2}-\d{2})$/);
+        const authorityMatch = param.match(/^authority:(.*)$/);
+
+        if (nameMatch) {
+          nameTerms.push(nameMatch[1].trim());
+        } else if (authorityMatch) {
+          authorityTerms.push(authorityMatch[1].trim());
+        } else if (dateMatch) {
+          dateValues.push(new Date(dateMatch[1])); // Properly convert date
+        }
+      });
+
+      let fromDate = null;
+      let toDate = null;
+
+      if (dateValues.length === 1) {
+        fromDate = dateValues[0];
+        toDate = new Date(); // Default to today
+      } else if (dateValues.length === 2) {
+        fromDate = new Date(Math.min(...dateValues.map(d => d.getTime()))); // Older date
+        toDate = new Date(Math.max(...dateValues.map(d => d.getTime()))); // Newer date
       }
+
+      // Apply filters
+      if (nameTerms.length) {
+        result = result.filter(a => nameTerms.some(term => a.name.toLowerCase().includes(term)));
+      }
+
+      if (authorityTerms.length) {
+        result = result.filter(a => authorityTerms.some(term => a.authority.toLowerCase().includes(term)));
+      }
+
+      if (fromDate && toDate) {
+        result = result.filter(a => {
+          const archiveDate = new Date(a.date);
+          return archiveDate >= fromDate && archiveDate <= toDate;
+        });
+      }
+
       return result;
     }, [search]);
+
+
 
     const pageCount = Math.ceil(filtered.length / PAGE_SIZE);
     const isPageValid = page >= 1 && page <= pageCount;
@@ -104,10 +136,11 @@ nav_include: no
         e("div", { className: "tooltip" },
           e("span", { className: "tooltip-icon" }, "?"),
           e("div", { className: "tooltip-box" },
-            e("div", null, "Search keys:"),
-            e("div", null, 'name:java'),
-            e("div", null, 'authority:udemy'),
-            e("div", null, "date:2023-01-30")
+            e("div", null, "Search keys: (separated by comma)"),
+            e("div", null, 'Available Options'),
+            e("div", null, '- name:java'),
+            e("div", null, '- authority:udemy'),
+            e("div", null, "- date:2023-01-30")
           )
         )
       ),
@@ -159,178 +192,3 @@ nav_include: no
 
   ReactDOM.createRoot(document.getElementById("archive-root")).render(e(ArchiveApp));
 </script>
-
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-
-  .archives-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 30px;
-  }
-
-  .search-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 30px;
-  }
-
-  .search-input {
-    width: 60%;
-    padding: 12px;
-    font-size: 18px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  .tooltip {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-  }
-
-  .tooltip-icon {
-    background-color: #000;
-    color: #fff;
-    border-radius: 50%;
-    padding: 4px 8px;
-    font-size: 14px;
-    line-height: 1;
-    user-select: none;
-  }
-
-  .tooltip-box {
-    display: none;
-    position: absolute;
-    top: 120%;
-    left: 0;
-    background-color: #000;
-    color: #fff;
-    padding: 8px 12px;
-    border-radius: 4px;
-    white-space: nowrap;
-    font-size: 13px;
-    z-index: 1000;
-  }
-
-  .tooltip:hover .tooltip-box {
-    display: block;
-  }
-
-  .no-result {
-    color: #000;
-    font-size: 20px;
-    margin-top: 40px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 15px;
-    text-align: center;
-    font-family: sans-serif;
-  }
-
-  .archives {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-  }
-
-  .archive-grid {
-    list-style: none;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-  }
-
-  .archive-item {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 15px;
-    position: relative;
-    min-height: 200px;
-  }
-
-  .arch-logo {
-    max-width: 80px;
-    height: auto;
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-  }
-
-  .arch-name {
-    margin-top: 0;
-  }
-
-  .pagination {
-    text-align: center;
-    margin: 20px 0;
-  }
-
-  .pagination button {
-    padding: 8px 15px;
-    margin: 0 5px;
-    cursor: pointer;
-  }
-
-  .verify-row {
-    margin-top: 10px;
-    font-size: 1rem;
-  }
-
-  .stars-container {
-    display: inline-block;
-    position: relative;
-    overflow: hidden;
-    text-decoration: none;
-    height: 20px;
-    margin-left: 5px;
-  }
-
-  .stars {
-    display: flex;
-    width: 100px;
-    height: 20px;
-  }
-
-  .star {
-    fill: #ccc;
-    transition: fill 0.3s ease;
-    margin: 0 2px;
-  }
-
-  .stars-container:hover .star {
-    fill: gold;
-  }
-
-  .instruction {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: #f8f8f8;
-    color: #555;
-    padding: 10px;
-    text-align: center;
-    z-index: 1000;
-    animation: ziggle 0.5s infinite alternate;
-  }
-
-  @keyframes ziggle {
-    0% { transform: translateX(-5px); }
-    100% { transform: translateX(5px); }
-  }
-
-  .total-label {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 20px;
-    color: #000;
-  }
-</style>
