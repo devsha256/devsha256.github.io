@@ -7,8 +7,8 @@ nav_include: no
 
 <div id="archive-root"></div>
 
-<script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
 
 <script>
   const e = React.createElement;
@@ -29,16 +29,49 @@ nav_include: no
     {% endfor %}
   ];
 
+  function parseQuery(queryString) {
+    const params = new URLSearchParams(queryString);
+    return {
+      search: params.get("search") || "",
+      page: parseInt(params.get("page") || "1", 10)
+    };
+  }
+
+
   function ArchiveApp() {
     const PAGE_SIZE = 6;
-    const [search, setSearch] = useState("");
-    const [page, setPage] = useState(1);
+    const [search, setSearch] = useState(parseQuery(window.location.search).search);
+    const [page, setPage] = useState(() => {
+      const parsed = parseQuery(window.location.search);
+      return isNaN(parsed.page) || parsed.page < 1 ? 1 : parsed.page;
+    });
+
+    
 
     const filtered = useMemo(() => {
       const query = search.trim().toLowerCase();
-      return !query || query.length < 3
-        ? archives
-        : archives.filter(a => a.name.toLowerCase().includes(query));
+
+      if (!query || query.length < 3) return archives;
+
+      let result = archives;
+
+      const nameMatch = query.match(/^name:(.*)$/);
+      const dateMatch = query.match(/^date:(\d{4}-\d{2}-\d{2})$/);
+      const authMatch = query.match(/^authority:(.*)$/);
+
+      if (nameMatch) {
+        const term = nameMatch[1].trim();
+        result = archives.filter(a => a.name.toLowerCase().includes(term));
+      } else if (authMatch) {
+        const term = authMatch[1].trim();
+        result = archives.filter(a => a.authority.toLowerCase().includes(term));
+      } else if (dateMatch) {
+        const fromDate = new Date(dateMatch[1]);
+        result = archives.filter(a => new Date(a.date) >= fromDate);
+      } else {
+        result = archives.filter(a => a.name.toLowerCase().includes(query));
+      }
+      return result;
     }, [search]);
 
     const pageCount = Math.ceil(filtered.length / PAGE_SIZE);
@@ -51,15 +84,39 @@ nav_include: no
       if (page > pageCount) setPage(1);
     }, [pageCount]);
 
+    useEffect(() => {
+      const url = new URL(window.location);
+      if (search) {
+        url.searchParams.set("search", search);
+      } else {
+        url.searchParams.delete("search");
+      }
+      if (page > 1) {
+        url.searchParams.set("page", page);
+      } else {
+        url.searchParams.delete("page");
+      }
+      window.history.replaceState({}, "", url);
+    }, [search, page]);
+
     return e("div", { className: "archives" },
       e("div", { className: "search-container" },
         e("input", {
           type: "text",
-          placeholder: "Search by name...",
+          placeholder: "Search by name, date, authority...",
           value: search,
           onChange: e => setSearch(e.target.value),
-          style: { width: "60%", padding: "10px", fontSize: "16px" }
-        })
+          className: "search-input"
+        }),
+        e("div", { className: "tooltip" },
+          e("span", { className: "tooltip-icon" }, "?"),
+          e("div", { className: "tooltip-box" },
+            e("div", null, "Search keys:"),
+            e("div", null, 'name:aws'),
+            e("div", null, 'authority:udemy'),
+            e("div", null, "date:2023-01-01")
+          )
+        )
       ),
 
       e("div", { className: "pagination" },
@@ -104,20 +161,54 @@ nav_include: no
 </script>
 
 <style>
-  .search-container {
-    text-align: center;
-    margin-bottom: 20px;
-  }
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 30px auto;
+  position: relative;
+}
 
-  .search-container input {
-    width: 60%;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    outline: none;
-  }
+.search-input {
+  width: 60%;
+  padding: 10px;
+  font-size: 16px;
+}
 
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltip-icon {
+  background-color: #000;
+  color: #fff;
+  border-radius: 50%;
+  padding: 4px 8px;
+  font-size: 14px;
+  line-height: 1;
+  user-select: none;
+}
+
+.tooltip-box {
+  display: none;
+  position: absolute;
+  top: 120%;
+  left: 0;
+  background-color: #000;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  white-space: nowrap;
+  font-size: 13px;
+  z-index: 1000;
+}
+
+.tooltip:hover .tooltip-box {
+  display: block;
+}
   .archives {
     font-family: Arial, sans-serif;
     margin: 20px;

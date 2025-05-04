@@ -1,3 +1,52 @@
+- name: 'Basic Good Manufacturing Practices (GMP)'
+  authority: Udemy
+  date: '2023-10-05'
+  image: udemy.png
+  cred_link: https://www.udemy.com/
+  drive_link: https://drive.google.com/file/d/1hfF5PCPH4A8sjI9chRTeH2hYKnEahQeN/view?usp=sharing
+
+- name: 'Git Essentials: Learn Git with Bitbucket and Sourcetree'
+  authority: Udemy
+  date: '2021-07-08'
+  image: udemy.png
+  cred_link: https://www.udemy.com/
+  drive_link: https://drive.google.com/file/d/1qeHTESrNuZ0emlcsH59dRRN3008z7mTY/view?usp=sharing
+
+- name: 'Practical Pharmaceutical Supply Management: LMIC Focus'
+  authority: Udemy
+  date: '2023-09-29'
+  image: udemy.png
+  cred_link: https://www.udemy.com/
+  drive_link: https://drive.google.com/file/d/1VtSaMlvvt64v5JCsfmjmTzzpz9j0c-9x/view?usp=sharing
+
+- name: 'Python for Beginners: Learn Python Programming (Python 3)'
+  authority: Udemy
+  date: '2020-06-17'
+  image: udemy.png
+  cred_link: https://www.udemy.com/
+  drive_link: https://drive.google.com/file/d/1sayyGqzqdowhaU9D9dsYOzn_LcdUD4iC/view?usp=sharing
+
+- name: AWS Essentials
+  authority: Udemy
+  date: '2023-08-21'
+  image: udemy.png
+  cred_link: https://www.udemy.com/
+  drive_link: https://drive.google.com/file/d/1SS-Q8KpmGUNjryMAVe9U7K9wN_GVzNZe/view?usp=sharing
+
+- name: Become the Ultimate Certified MuleSoft Architect- MCIA/MCPA
+  authority: Udemy
+  date: '2023-09-24'
+  image: udemy.png
+  cred_link: https://www.udemy.com/
+  drive_link: https://drive.google.com/file/d/16S0mXZmUaHQcG1SHmyZZ6Uwqelh9Esza/view?usp=sharing
+
+- name: Ultimate Mulesoft Certified Platform Architect Course- MCPA
+  authority: Udemy
+  date: '2023-07-01'
+  image: udemy.png
+  cred_link: https://www.udemy.com/
+  drive_link: https://drive.google.com/file/d/1whAN3YH0fc5S_7j5T9o85B7LN-v9wVcd/view?usp=sharing
+
 - name: 'Time Management: Working from'
   authority: LinkedIn Learning
   date: '2020-04-16'
