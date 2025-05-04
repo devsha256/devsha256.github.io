@@ -13,7 +13,7 @@ SCOPES = ['https://www.googleapis.com/auth/drive.metadata.readonly']
 CREDENTIALS_FILE = './_py/credentials.json'  # OAuth desktop credentials JSON
 TOKEN_FILE = 'token.pickle'
 DRIVE_FOLDER_ID = '1NtMgtu9lOvfPVeNeepjNKXNKtleHMcVa'
-LOCAL_PDF_FOLDER = './linkedin/'
+LOCAL_PDF_FOLDER = './certs/'
 OUTPUT_YAML = './_data/archives.yml'
 
 # AUTHENTICATE USING OAUTH DESKTOP FLOW
@@ -32,13 +32,27 @@ def authenticate():
             pickle.dump(creds, token)
     return creds
 
-# GET FILES FROM DRIVE FOLDER
+# GET ALL PDF FILES FROM DRIVE FOLDER (with pagination)
 def get_drive_files(service):
-    results = service.files().list(
-        q=f"'{DRIVE_FOLDER_ID}' in parents and mimeType='application/pdf'",
-        fields="files(id, name)"
-    ).execute()
-    return results.get('files', [])
+    all_files = []
+    page_token = None
+
+    while True:
+        response = service.files().list(
+            q=f"'{DRIVE_FOLDER_ID}' in parents and mimeType='application/pdf'",
+            fields="nextPageToken, files(id, name)",
+            pageSize=1000,  # Adjust as needed (max 1000)
+            pageToken=page_token
+        ).execute()
+
+        files = response.get('files', [])
+        all_files.extend(files)
+
+        page_token = response.get('nextPageToken')
+        if not page_token:
+            break
+
+    return all_files
 
 # EXTRACT DATA FROM LOCAL PDF
 def extract_info_from_pdf(filepath):

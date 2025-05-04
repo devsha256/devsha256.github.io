@@ -1,600 +1,1806 @@
-- name: Creating GitHub Portfolios
+- name: 'Time Management: Working from'
   authority: LinkedIn Learning
-  date: '2025-02-03'
+  date: '2020-04-16'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1Mq7BwEiJbU8mLYoSeUVe9EdUv1E240IC/view
+  drive_link: https://drive.google.com/file/d/1NEXaT2W4VtoAIEK60K1KWRRWhQ4dZ1Aa/view
+- name: Fighting Gender Bias at Work
+  authority: LinkedIn Learning
+  date: '2020-04-16'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1QLpn8U4qXbV5iZTmI1j8Co2TGsTrboK4/view
 - name: Learning GraphQL (2018)
   authority: LinkedIn Learning
   date: '2020-04-18'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1rttQotRhwjFH4YgcGc5nw_mebWsD25ZN/view
+  drive_link: https://drive.google.com/file/d/16B9CYEVrCHXBZfZ0NpVIl9k53QeCSJ5-/view
 - name: React.js Essential Training (2018)
   authority: LinkedIn Learning
   date: '2020-04-18'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/163ynomI78tcaQDp8_WJIz-iLgRMlZM-H/view
+  drive_link: https://drive.google.com/file/d/17PBlMaOfd8qmGvKHQgCTneqqIx7WmZCM/view
+- name: 'Own Your Voice: Improve'
+  authority: LinkedIn Learning
+  date: '2020-04-18'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1EWV-WkHpgipo273kw-22vg7YBwADcyKo/view
+- name: Developing Your Emotional
+  authority: LinkedIn Learning
+  date: '2020-04-19'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1Tuc19Iuc0bGmZpuu9puERXwsZ7bOWDrT/view
 - name: MERN Essential Training (2020)
   authority: LinkedIn Learning
   date: '2020-04-27'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1JQwOc-cbyuriEHZm_sNMGFQERG4xIqW0/view
-- name: Learning MySQL Development (2014)
+  drive_link: https://drive.google.com/file/d/1v5zAG4dXEX7dbIzH9wiIpPKb65qfnwMJ/view
+- name: Managing Stress for Positive Change
   authority: LinkedIn Learning
-  date: '2020-06-18'
+  date: '2020-05-02'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1COD8P4kRL1zcmHOLyqq1IwHU6G_EdKBu/view
+  drive_link: https://drive.google.com/file/d/1ZOI_Y2vjir3LOWjWw9mW3kbzI-pqsSEx/view
+- name: Public Speaking Foundations
+  authority: LinkedIn Learning
+  date: '2020-05-02'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1dnxh5rA-tL_QRE5gYj_BIG_CRi16LvCk/view
+- name: Improving Your Focus
+  authority: LinkedIn Learning
+  date: '2020-05-04'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1giVod1gdj_B8h0hRgZtiVJhGf4XVV1JE/view
+- name: Building a Better To-Do List
+  authority: LinkedIn Learning
+  date: '2020-05-03'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/102708sHqTaAu6NOAKLmpAFg37uR1tIyq/view
+- name: Anger Management
+  authority: LinkedIn Learning
+  date: '2020-05-06'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1SO6i678cX15TsC9gWBWTLpkBNF6JrFjz/view
+- name: Critical Thinking for Better Judgment
+  authority: LinkedIn Learning
+  date: '2020-06-01'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/15QQIPJn-bnrzgGOYVCuNHDVRWJs-eBsg/view
 - name: Learning MongoDB (2017)
   authority: LinkedIn Learning
   date: '2020-04-18'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/16pXQBmqh7cbR2pls5os22L8VwMS8yw_6/view
-- name: 'Linux: Bash Shell and Scripts'
+  drive_link: https://drive.google.com/file/d/1kvCqN3sfkCr2vlXCvl9ktaZ-uu0WIxtj/view
+- name: Learning MySQL Development (2014)
   authority: LinkedIn Learning
-  date: '2020-06-22'
+  date: '2020-06-18'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/13HQjJUxCI2eg8SsiRE25MfaizQzghWsV/view
-- name: 'Linux System Engineer: Bash Shell'
-  authority: LinkedIn Learning
-  date: '2020-06-24'
-  image: linkedin_learning.png
-  cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1y5-a-47ucUeR9bN1I-3qjZ77Gb0Qi_uv/view
+  drive_link: https://drive.google.com/file/d/1DPaGj4HOceSYDVTt8AYPrhnr-hIUJtQC/view
 - name: Learning Zsh
   authority: LinkedIn Learning
   date: '2020-06-22'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1Nx5IXwezccpxJMbLz-PBBjfC-tUPGQ0c/view
+  drive_link: https://drive.google.com/file/d/1uLyed3EOtH4ibakk3l4kwPGwwLn8cGpZ/view
+- name: 'Linux: Bash Shell and Scripts'
+  authority: LinkedIn Learning
+  date: '2020-06-22'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/15b0H7EsFN3UZiTvrWu06rHFaF9iSYrqc/view
+- name: 'Linux System Engineer: Bash Shell'
+  authority: LinkedIn Learning
+  date: '2020-06-24'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/10mAavqyVPl7lyZ5ZDYOsMqC6PwRUIuFj/view
 - name: Docker for Developers (2019)
   authority: LinkedIn Learning
   date: '2020-06-24'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1xwadAgXOsGDfJsZTr6N0WMgxnUGPrSf6/view
+  drive_link: https://drive.google.com/file/d/1mDgB6wnvfmamHaNI2arRCpDjApDFhQv4/view
+- name: LinkedIn Quick Tips (2019)
+  authority: LinkedIn Learning
+  date: '2020-06-27'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1Qtyu2tPzyg7TRc_k9Ldz5JRdZhy_ysaA/view
+- name: "Grammar Girl\u2019s Quick and Dirty Tips"
+  authority: LinkedIn Learning
+  date: '2020-06-27'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1fZH1p4RdxOns7g86VK3OqkoCYucYQRhb/view
+- name: Success Habits
+  authority: LinkedIn Learning
+  date: '2020-06-28'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/14wblKvSs-JUS57br2hIw6LwLoTEiM6zr/view
+- name: Learning Spring with Spring Boot
+  authority: LinkedIn Learning
+  date: '2020-06-30'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1QQCrBmz92TJHUMbPY5uxLHsvBSgYlf-i/view
+- name: 'Spring: Framework in Depth'
+  authority: LinkedIn Learning
+  date: '2020-07-02'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1Pie4GCIvIGpDytIlsOzBS4WbI1kWKS_R/view
+- name: Spring Boot 1.0 Essential Training
+  authority: LinkedIn Learning
+  date: '2020-07-03'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1VCsHnHI3fwxjz04RFNl5VjplBuGirr3B/view
+- name: Spring Boot 2.0 Essential Training
+  authority: LinkedIn Learning
+  date: '2020-07-03'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1KWGaXhzrL3LoTn-1w7288gq3gqGW5lh3/view
+- name: Learning Java 11
+  authority: LinkedIn Learning
+  date: '2020-07-11'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1iTfipbUD8tRACk3qdljUAZxKsXag5fhe/view
+- name: Building Trust (2018)
+  authority: LinkedIn Learning
+  date: '2020-08-25'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1nHSRF50wILxNAhCFOuoEyDjK8TN5WbMc/view
+- name: Being an Effective Team Member
+  authority: LinkedIn Learning
+  date: '2020-08-25'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1VeH9kBjpFKSRY3wCkZ8XG5Ln_N-mGMNv/view
+- name: Learning Agility
+  authority: LinkedIn Learning
+  date: '2020-08-26'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/13fR4-s8IJCSCkvnSl9tyToE3qXthALrP/view
+- name: Teamwork Foundations (2015)
+  authority: LinkedIn Learning
+  date: '2020-08-26'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1UOs7b-96JbHM01xeI5xiZVxwRoJQ9L9e/view
+- name: Communication within Teams (2017)
+  authority: LinkedIn Learning
+  date: '2020-08-26'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1AkROPuEL-A_NJrB0vfzSkQEfEhk5WyWX/view
+- name: The Five-Step Creative Process
+  authority: LinkedIn Learning
+  date: '2020-08-28'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1xxjD5DWFSBP8ZBXrK-GtA-kNdYLNI_d-/view
+- name: Jeff Dyer on Innovation
+  authority: LinkedIn Learning
+  date: '2020-09-03'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1Ri6MnhDnTVhQ3QEfMvUumsLCIo4ezGvN/view
+- name: Creativity Boot Camp
+  authority: LinkedIn Learning
+  date: '2020-09-03'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/15B6gzpVUYyUWYhy3iTy3WZvcuYFQa6lS/view
+- name: Learning Brainstorming
+  authority: LinkedIn Learning
+  date: '2020-09-03'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/14vyh_FcIpCm0Ctxux6KIi-lEnN1CjJpl/view
+- name: Thinking Creatively
+  authority: LinkedIn Learning
+  date: '2020-09-03'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1cieEQmJZlRD9p98jEVdxyL4RuU94Q5ma/view
+- name: 'Customer Service: Managing'
+  authority: LinkedIn Learning
+  date: '2020-09-03'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1iXzibHB94SbzCzU9T-RyXEEqPb4PYmCc/view
+- name: Leading a Customer-Centric Culture
+  authority: LinkedIn Learning
+  date: '2020-09-03'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1bmU_wLJWCfMyme6SoOT4hYJ-F1slGDH0/view
+- name: Building Rapport with Customers
+  authority: LinkedIn Learning
+  date: '2020-09-04'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1QpKT4C73nRRq1Xu5DkmezzhomFFsXfKj/view
+- name: 'Customer Service: Handling Abusive'
+  authority: LinkedIn Learning
+  date: '2020-09-06'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1Q7bTZNOJmbnUq0QqW98BH5T0O5pNLFj6/view
+- name: Creating a Positive Customer
+  authority: LinkedIn Learning
+  date: '2020-09-06'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1-dEMOA1uk2qsvAB0FAYnNFkx_OEbsjN1/view
+- name: Using Questions to Foster Critical
+  authority: LinkedIn Learning
+  date: '2020-09-07'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1FDMyu9b5rltbGyNDduBCEAsgzp9Wl1ot/view
+- name: Problem-Solving Techniques
+  authority: LinkedIn Learning
+  date: '2020-09-08'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1m3lJ5mPvEijp6SZARfCWfNO37t2bGWLP/view
+- name: 'Business Analysis Foundations:'
+  authority: LinkedIn Learning
+  date: '2020-09-08'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1ZSyxE2_Y7crHJquAtFph8__v61onqpz1/view
+- name: 'Stepping Up: How Taking'
+  authority: LinkedIn Learning
+  date: '2020-09-08'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1lNNw6CLvUDmaosB-CHmT3BK96Gh364sH/view
+- name: Creating Your Personal Brand
+  authority: LinkedIn Learning
+  date: '2020-09-08'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1MAG9HIr0-q642Ebvq0Q7XSzCs-Fp5NYl/view
+- name: Defining and Achieving Professional
+  authority: LinkedIn Learning
+  date: '2020-09-08'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/133nJU3TVRNmbV3NpJfkvQ8hFrbsBLFiE/view
+- name: Developing Resourcefulness
+  authority: LinkedIn Learning
+  date: '2020-09-08'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1dQuBeXiXH04rnaIhLUUBLu_o_c3FhES9/view
+- name: 'Be More Productive: Take Small'
+  authority: LinkedIn Learning
+  date: '2020-09-08'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1kAE0EefaPZVRxDxIOjcRxxRXSk9HEEQK/view
+- name: Holding Yourself Accountable
+  authority: LinkedIn Learning
+  date: '2020-09-08'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1hQfznU7rqjijcFsAy-MU_rSMX9byAc7j/view
+- name: Ideas That Resonate
+  authority: LinkedIn Learning
+  date: '2020-09-08'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1y9dhDt5RXt4SPg6Rz3svR8_GuuNFjXXU/view
+- name: 'Being the Best You: Self-Improvement'
+  authority: LinkedIn Learning
+  date: '2020-09-08'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1tPZmx4zvYQwt3MhSdfzQXjDcpBLInL0W/view
+- name: 'First Look: Java 10 and Java 11'
+  authority: LinkedIn Learning
+  date: '2020-09-12'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1ddox3RmhLcLPiFEthwly5cr4QD2dqA4n/view
+- name: "Learning ITIL\xAE (2019)"
+  authority: LinkedIn Learning
+  date: '2020-09-16'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1SRp-_0wFTO62qZBChlNc2WGyKSnMii4w/view
 - name: "ITIL\xAE Foundation 4 First Look"
   authority: LinkedIn Learning
   date: '2020-09-18'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1Xt98-8WiC-G-N-ExCAGMUQXjFUGCu9KF/view
-- name: "Putting ITIL\xAE Into Practice: Applying ITIL\xAE 4"
+  drive_link: https://drive.google.com/file/d/1fXXKWR1xWiL8-PmEO_NSdwy_UgjHG7hz/view
+- name: "Putting ITIL\xAE Into Practice: Applying"
   authority: LinkedIn Learning
   date: '2020-09-18'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1RNxoJ25lVmR-I6QissJUw_RCNisOxUYC/view
-- name: "Putting ITIL\xAE Into Practice: Applying ITIL\xAE 4"
-  authority: LinkedIn Learning
-  date: '2020-09-18'
-  image: linkedin_learning.png
-  cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/10SmZUCXuvLtheuTjjDjdjus4Va6ZRtFp/view
+  drive_link: https://drive.google.com/file/d/1oYBThajM5Dqa6B44M2IKfuINh0sHWujy/view
 - name: Blockchain Basics (2017)
   authority: LinkedIn Learning
   date: '2020-12-25'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1e_qlP01WgFnhnswQ4elH5EnCCIZyMGzT/view
+  drive_link: https://drive.google.com/file/d/1uod0vdBcgLidJfDf7_Fct_fNj6I-MFGk/view
 - name: Learning Django
   authority: LinkedIn Learning
   date: '2021-02-27'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1nlgWsQ_SvOt2DYmvl8zKBtyWEyhpYJ9-/view
+  drive_link: https://drive.google.com/file/d/1h3HadcJ0WwqLg4OXvlTZ1n57EtM5IE2I/view
+- name: Speaking Confidently and Effectively
+  authority: LinkedIn Learning
+  date: '2021-03-10'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1wcsPTL726g-1fVeRX4ZWvR2NNzbReMDy/view
+- name: Creating Positive Conversations with
+  authority: LinkedIn Learning
+  date: '2021-03-15'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1lpLqJYGAmSqDWLI_vv6EWN62LPSRtHVW/view
+- name: Customer Service Foundations (2020)
+  authority: LinkedIn Learning
+  date: '2020-09-07'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/10lvLZQTo_EvL-wp0b4yQk4liF8d21rN3/view
+- name: Managing Stress (2019)
+  authority: LinkedIn Learning
+  date: '2020-07-03'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1UBl0odbOGe6KAGp0Aj2eUSvEfaG9LsZn/view
 - name: Excel Essential Training (Microsoft
   authority: LinkedIn Learning
   date: '2021-03-16'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1_lotUzpC6EPIBjeJd4A-TZktcOHZ1cHx/view
+  drive_link: https://drive.google.com/file/d/13mUqP4zKdjcU7KK-gCVsBL_gjS_30H1u/view
+- name: Enhancing Your Productivity
+  authority: LinkedIn Learning
+  date: '2021-03-25'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1cbCl6z9Ev1DwOxayhI-nz6-DuWNr6K8Q/view
+- name: How to Manage Feeling
+  authority: LinkedIn Learning
+  date: '2021-03-25'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/137YJayM2ekYadWAW6FFcSXfJtXw5SOsn/view
+- name: Unlocking Your Potential
+  authority: LinkedIn Learning
+  date: '2021-03-26'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1drB9lWQ89A-0DyG1xpOZdffaRxqLzjWN/view
+- name: Building Self-Confidence
+  authority: LinkedIn Learning
+  date: '2020-09-08'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1JL2-BwwEnrGEc54YVHCMAL4wOjyLLyzp/view
+- name: How to Rock an Interview
+  authority: LinkedIn Learning
+  date: '2021-03-28'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1ItsEukvW6Ab3YmhKBAf-RdW1icwDL-3A/view
+- name: Leadership Tips, Tactics, and Advice
+  authority: LinkedIn Learning
+  date: '2021-03-30'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1fploKHlvSSxf8JG0ZZLVEC_WCvT3dOiS/view
+- name: Interpersonal Communication (2020)
+  authority: LinkedIn Learning
+  date: '2021-03-26'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1qTVX3tqhqdGeIbv_jlKzOYM-zggimkuy/view
+- name: 'Java EE: Packaging and Deploying'
+  authority: LinkedIn Learning
+  date: '2021-06-12'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1cOHvSG9UU6abX70JBQYgz-KDRrMFYL2C/view
+- name: Learning NetBeans
+  authority: LinkedIn Learning
+  date: '2021-06-12'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1P9p1uC6uSVuEUGD0JrukBeB9pO2I7Y3-/view
+- name: 'Programming Foundations: APIs and'
+  authority: LinkedIn Learning
+  date: '2021-06-12'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1usT3H3RqY-aAk8tVEDZrxXmrv9uWwbba/view
 - name: 'Java: IDE Overview (2016)'
   authority: LinkedIn Learning
   date: '2021-06-12'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/15Bg8uEdRVSvtMkxuvD5wD6nBHSz3sKXK/view
-- name: 'Java EE: JavaServer Faces JSF'
+  drive_link: https://drive.google.com/file/d/1UUqUJ0URWr9zIHUTZ5fN9y0HGHsOgXjP/view
+- name: Accessibility for Web Design
   authority: LinkedIn Learning
   date: '2021-06-12'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1NiSrsmx--jxLW91fJHs6fxs5v77SuMvB/view
+  drive_link: https://drive.google.com/file/d/1zs1Dgv5kTHSpASWkldclEISLJquGlV03/view
 - name: MySQL Essential Training (2019)
   authority: LinkedIn Learning
   date: '2021-06-12'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/14bfEw7AsL1HUOpJtS2dzAOabmnabbpEh/view
+  drive_link: https://drive.google.com/file/d/1phUq7AaYEftWGOuwFDu1utF_GMavUJDg/view
+- name: 'Java EE: JavaServer Faces JSF'
+  authority: LinkedIn Learning
+  date: '2021-06-12'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1LRs60TxRV-3ZGAfh0YqxMB8pv95oBz6-/view
+- name: Building a Full-Stack App with
+  authority: LinkedIn Learning
+  date: '2021-06-12'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1x02ojBCaHE3-r0bVXLF4n3iYdb-fDVCU/view
 - name: 'Spring: Spring MVC (2018)'
   authority: LinkedIn Learning
   date: '2021-06-14'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1lkLdbYUbPCNX0LdnlIGGjFpDuBRn0gUz/view
+  drive_link: https://drive.google.com/file/d/1qWvI4skbP0Ex_fBXJAlmhVNqhtVA71BR/view
 - name: Learning Apache Tomcat
   authority: LinkedIn Learning
   date: '2021-06-14'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1NS1qMIsGGYSXQUNaYs66Dediy3n0jQaN/view
+  drive_link: https://drive.google.com/file/d/1LGBuN_jZJfjMRHB2sFqKGRqG1IUPngCx/view
+- name: Improving Your Judgment for Better
+  authority: LinkedIn Learning
+  date: '2021-06-15'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1BiJAvi54mtK0UCgbv7L9L_5d_xybhVVu/view
+- name: A3 Problem Solving for Continuous
+  authority: LinkedIn Learning
+  date: '2021-06-15'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1MbvdCU3eNZ5SfP_h6kh3ssoPifhpmvI-/view
+- name: Managing Up, Down, and Across the
+  authority: LinkedIn Learning
+  date: '2021-06-15'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/10fley7HVgZLa2gVkoCk7xac7LpBrQTov/view
+- name: Critical Thinking
+  authority: LinkedIn Learning
+  date: '2021-06-15'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1TckgAR1iE13ssNxg_5s9jKcuazZwltK-/view
+- name: The Essential Elements of Predictive
+  authority: LinkedIn Learning
+  date: '2021-06-15'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/17Uu41idnIl64ewRQZ2_qTlJVf3mPcxJ0/view
+- name: Leading and Working in Teams
+  authority: LinkedIn Learning
+  date: '2021-06-27'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1Re31V7NODNMdNoUzP3rBpPKpJ-fGsR0h/view
+- name: Working on a Cross-Functional Team
+  authority: LinkedIn Learning
+  date: '2021-06-27'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1VRnAaH3bgrn6vDar5vRmlBBObl5T_jPN/view
+- name: Collaboration Principles and Process
+  authority: LinkedIn Learning
+  date: '2021-06-27'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1uNMPLCOv3ouuuJj1A1BCjdIaTY_fqi_k/view
+- name: Data Analytics for Business
+  authority: LinkedIn Learning
+  date: '2021-06-27'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1HHrgnEfXcADtRZYsw-iDQbeFRsi4E_4F/view
 - name: 'Programming Foundations: Version'
   authority: LinkedIn Learning
   date: '2021-07-05'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1LkTwQ0PWLHyXhr19Dsm4H5U42-C7h4Zp/view
+  drive_link: https://drive.google.com/file/d/1N3zFCKs4CDbZ_SDCdnYzM5ZPhKv4IPdo/view
 - name: 'Git: Branches, Merges, and Remotes'
   authority: LinkedIn Learning
   date: '2021-07-05'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1oqYGJY-S35PeNIMFPWQXfQ2XDcGOfSfY/view
+  drive_link: https://drive.google.com/file/d/1BbM0Aa11ereGoMg4F9d0NZrHISBGmJBa/view
+- name: GitHub Essential Training
+  authority: LinkedIn Learning
+  date: '2021-07-05'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1qmtBWurPeKBAzzkMaqiJ4MwyuAaG3EXO/view
 - name: Git for Teams
   authority: LinkedIn Learning
   date: '2021-07-05'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1kwrhZfGgzI1g90BA9AnczdU7yO0MYTL2/view
+  drive_link: https://drive.google.com/file/d/1JlPsZLC4H4ykQIz3FsazReA-QM60-8CR/view
 - name: Git Intermediate Techniques (2018)
   authority: LinkedIn Learning
   date: '2021-07-05'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1da9jEfdWjVJXHxRu5JSV0mBA9ggYME9L/view
+  drive_link: https://drive.google.com/file/d/1wtrFZXlQnp81Pw8-YqOlbTY-LhAuoEu_/view
 - name: Git for System Administration
   authority: LinkedIn Learning
   date: '2021-07-05'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/14FgaWy2dVj3hzqkIMKLxZVCwaTqOedS0/view
+  drive_link: https://drive.google.com/file/d/1TVOkxhmCjHqbeURJnQxQv4s39CRaXn6K/view
 - name: 'Git Essential Training: The Basics'
   authority: LinkedIn Learning
   date: '2021-07-05'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1TsOirvq0vjFMzx9bMEUCUvMu6o9RBmku/view
-- name: 'Git Essential Training: The Basics (2019)'
-  authority: LinkedIn Learning
-  date: '2021-07-05'
-  image: linkedin_learning.png
-  cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1qc021QAxqImiebbgMHQVNIAPFo2NC8gX/view
-- name: 'Lean Six Sigma: Analyze, Improve,'
-  authority: LinkedIn Learning
-  date: '2021-07-05'
-  image: linkedin_learning.png
-  cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1YFnM-OStOHmud5CqD9Dy6HyykT00A7pY/view
-- name: 'Lean Six Sigma: Analyze, Improve, and Control'
-  authority: LinkedIn Learning
-  date: '2021-07-05'
-  image: linkedin_learning.png
-  cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1LL-YiZCPxLhR5K6NQhw3H70mLtYhy5cz/view
+  drive_link: https://drive.google.com/file/d/1sG_5cjW6xvav1qJA8X1Pru4kgIWT_xkW/view
 - name: 'Lean Six Sigma: Define and Measure'
   authority: LinkedIn Learning
   date: '2021-07-05'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1SLWqfzHQzhuJ8pGlFV3xK0xLcO_Q1FrU/view
-- name: 'Lean Six Sigma: Define and Measure Tools'
+  drive_link: https://drive.google.com/file/d/1-S0rk5bTJdAEqZAtu57lK3tvxoYYASs-/view
+- name: 'Lean Six Sigma: Analyze, Improve,'
   authority: LinkedIn Learning
   date: '2021-07-05'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1SjwXLFO2Oj48PztklHQBujiTbEacSifh/view
-- name: 'Lean Six Sigma: Define and Measure Tools'
-  authority: LinkedIn Learning
-  date: '2021-07-05'
-  image: linkedin_learning.png
-  cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1L6311u2fA-8VETvSnM4rJrYeKWpWU23W/view
+  drive_link: https://drive.google.com/file/d/1fYXn8am6mIQBuNEzjSOr8oWd1eI8vkKh/view
 - name: 'JMeter: Performance and Load'
   authority: LinkedIn Learning
   date: '2021-07-07'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1JBNTa1dugUHlWKAhBMXnUzwQkjGubRYg/view
+  drive_link: https://drive.google.com/file/d/1khBLxF7QP2Z1NOfhjySXbcpdgUIdd90l/view
+- name: Microservices Foundations (2018)
+  authority: LinkedIn Learning
+  date: '2021-07-07'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1VrvqVUtFJU9r5FCELthTE5uGte8gxfSe/view
+- name: 'Node.js: Microservices (2019)'
+  authority: LinkedIn Learning
+  date: '2021-07-07'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1IlTq7Vbs_wfA4tPDc1BbsXCzrr8v3r9o/view
 - name: 'Kubernetes: Microservices (2018)'
   authority: LinkedIn Learning
   date: '2021-07-07'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1C3Yqqtt2byKPImm_AKS7jZPQYZLwzaBb/view
+  drive_link: https://drive.google.com/file/d/1s_lmcSIV9BSLjMSGRjbsMzwslebAoPsT/view
 - name: Mastering Microservices with Java
   authority: LinkedIn Learning
   date: '2021-07-07'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/12cDm4S6zSMv4UubmdUa2WlBEvsPbgNw_/view
+  drive_link: https://drive.google.com/file/d/1-C6Z_ZaSE5bsZ2iLusJY7hpZ46djx8OU/view
 - name: 'Spring: Spring MVC'
   authority: LinkedIn Learning
   date: '2021-07-07'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1wSH4VURSQhgUf5eCRhFifeN947avT8Pn/view
+  drive_link: https://drive.google.com/file/d/1ak-yh3LM-FV0S5mmEltjfbbHAE0oCcLC/view
 - name: 'Spring: Spring Data 2 (2017)'
   authority: LinkedIn Learning
   date: '2021-07-07'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1wnwTnCTAZn74cJHjAsJ6XQ0HzBZ_oFDx/view
+  drive_link: https://drive.google.com/file/d/1D5Tte0V2jke2IQz61x6yjNNACY6x4512/view
 - name: 'Spring: Spring Security (2018)'
   authority: LinkedIn Learning
   date: '2021-07-07'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1IiTBj3hxW2XE6DAnD7G5Ke6uRABsh2AQ/view
+  drive_link: https://drive.google.com/file/d/1jIIVVXHxvTxjN6gyUvYCl-KaSUm2hgeJ/view
+- name: Tips for Better Business Writing
+  authority: LinkedIn Learning
+  date: '2021-07-07'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1N85XpmGIUySKYS5n7H7brZ4opKXn_sKN/view
+- name: Delivering Bad News Effectively
+  authority: LinkedIn Learning
+  date: '2021-07-07'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1eZYW8MM8pOQwZfzwNrpF0ApG30aB6XOA/view
+- name: 'Cloud Architecture: Design Decisions'
+  authority: LinkedIn Learning
+  date: '2021-07-07'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1Y_wahm-CqTD3aWecRd23G6bio785o9QI/view
+- name: 'Cloud Architecture: Core Concepts'
+  authority: LinkedIn Learning
+  date: '2021-07-07'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1b93SveSp_IDgvNHFRb2nctwe6ts6ajAd/view
+- name: Communication Tips (2015)
+  authority: LinkedIn Learning
+  date: '2021-07-07'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1cX4MUqKIH4kBKUmbKJMnIoHbzuGgSB5T/view
+- name: Building High-Performance Teams
+  authority: LinkedIn Learning
+  date: '2021-07-07'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1kluKZjvbzp_x0H_37Gt3c5lzPUh0AYth/view
+- name: Learn Java with Swing
+  authority: LinkedIn Learning
+  date: '2021-07-08'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1BEIb9Vu7LRV2zEdMyalW-EZrMwrJdtAZ/view
+- name: Learning JavaFX GUI Development
+  authority: LinkedIn Learning
+  date: '2021-07-08'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1xaoaw-WDFJjiWYuIG_l6BrkzStbia7Ki/view
+- name: 'Programming Foundations: Object-'
+  authority: LinkedIn Learning
+  date: '2021-07-08'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1Ee20qcNs0U5ePByDLuNBXe1FaO55pg1Q/view
 - name: Java 11+ Essential Training
   authority: LinkedIn Learning
   date: '2021-07-08'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1sUTIeHpBS7rYA6iD8zsKeCUDf87SJxJY/view
+  drive_link: https://drive.google.com/file/d/1_irazpLbEFhxCfQtKTFRJyqcV6dODGUT/view
+- name: Learning Java Applications (2019)
+  authority: LinkedIn Learning
+  date: '2021-07-08'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1TEu2O-X8dBwbTbu_itP7kWZivKXq0lX6/view
 - name: Java Memory Management
   authority: LinkedIn Learning
   date: '2021-07-08'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1hkGeA8ypbMy_yK73Wa2JtRnc2Jr7UUFF/view
-- name: 'Java Persistence API (JPA): 2'
-  authority: LinkedIn Learning
-  date: '2021-07-08'
-  image: linkedin_learning.png
-  cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1Xv5HEHha7daSaquSgFGS_aIrodYMCqOB/view
+  drive_link: https://drive.google.com/file/d/1yChAmA32-eNZAM3SccXzNZ7ybRysjUBr/view
 - name: 'Java Persistence API (JPA): 1 The'
   authority: LinkedIn Learning
   date: '2021-07-08'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/19vlaTmNRP-XqRknQeO48RxAA-TBSKVxf/view
+  drive_link: https://drive.google.com/file/d/1pDsbh6HbVkG4sB7CPsYvzgj0IVTqIwwH/view
+- name: Cloud-Native Development Using
+  authority: LinkedIn Learning
+  date: '2021-07-08'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1DlI-PGke4eim-uE_iT7URymg4U3QlQcn/view
+- name: 'Java Persistence API (JPA): 2'
+  authority: LinkedIn Learning
+  date: '2021-07-08'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1Z6-aWv-7St0RoIDq6dcwUHA85N3hvjaF/view
+- name: Nail Your Java Interview (2018)
+  authority: LinkedIn Learning
+  date: '2021-07-08'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1RE_5KMbXPx3SPDGPuaCDVX4gibO3k6wd/view
 - name: 'Python Data Structures: Dictionaries'
   authority: LinkedIn Learning
   date: '2021-07-08'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1lcc30C2zQd4EqutQGHOLIKVgeYxWXOZS/view
-- name: 'Python Data Structures: Dictionaries'
+  drive_link: https://drive.google.com/file/d/1SjTY3mQk9Z7AjIt9EFou0C9yhoKy0Crq/view
+- name: 8 Things You Must Know in Python
   authority: LinkedIn Learning
   date: '2021-07-08'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1PkZPbCVp33l9lhyzxrn-afIVrKdcTR8H/view
+  drive_link: https://drive.google.com/file/d/1I8Tx_bv4CivCyGFsfoh2BYahTJivVQCI/view
 - name: 'Python Data Structures: Stacks,'
   authority: LinkedIn Learning
   date: '2021-07-08'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1LUNTvQqHQqypudlCSANjwBJ4a8fojkGo/view
+  drive_link: https://drive.google.com/file/d/1nl1ZFt5KuCydKLxlVyAhZC7Nvw-Qyf_b/view
 - name: 'Programming Foundations: Data'
   authority: LinkedIn Learning
   date: '2021-07-08'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1y9qQeubIQDMfYiGMwqRP3YzL5s7m1dEn/view
+  drive_link: https://drive.google.com/file/d/1Gf6DcQnwSTQ6SMwdJ7TnQ9IcZE0TG7WI/view
 - name: Python Standard Library Essential
   authority: LinkedIn Learning
   date: '2021-07-08'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1Qnu3HrI8zwZ5iUXuMuUyB-xMOTk2n2t5/view
+  drive_link: https://drive.google.com/file/d/1NIkf74zeSenugfIbAv1VMb61noFayOAt/view
+- name: Learning Python (2020)
+  authority: LinkedIn Learning
+  date: '2021-07-08'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1HSQb5fv13U3qbEq0GvgPVbyBr4hLJ7gy/view
+- name: 'Performance Management: Setting'
+  authority: LinkedIn Learning
+  date: '2021-07-08'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1DTfbpohjUdyXxwAHrrvJdIAa3G5uYes2/view
+- name: 'Creativity at Work: A Short Course'
+  authority: LinkedIn Learning
+  date: '2021-07-18'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1mz1s7KFuysq298wWGQonl9cZZH4gvrY_/view
+- name: Making Quick Decisions
+  authority: LinkedIn Learning
+  date: '2021-08-07'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1Q42XfGhxkEDH00gEcD_7Qizq7yIDslWN/view
+- name: Writing to Be Heard on LinkedIn
+  authority: LinkedIn Learning
+  date: '2021-08-07'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1P1glVWlKhquivw4wyUZ-QcN8Y37yBBYN/view
+- name: Tips for Writing Business Emails
+  authority: LinkedIn Learning
+  date: '2021-08-07'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1CD0GusrjmkbmvM4eYcytEhQYOoRmLXmD/view
+- name: How to Present and Stay on Point
+  authority: LinkedIn Learning
+  date: '2021-08-07'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1JbkghcIaeXHzOfB_Vt_j92qjRhqclnLz/view
+- name: 'Writing with Flair: How to Become an'
+  authority: LinkedIn Learning
+  date: '2021-08-07'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1prb6c-spcARDICmUe9Uf-STWWUDBGGgP/view
 - name: Java Database Access with Hibernate
   authority: LinkedIn Learning
   date: '2021-06-12'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1fzQZOKI_Zmcm5wpjVwYTvLtLgC4gU_j6/view
+  drive_link: https://drive.google.com/file/d/1sWOWan8pxJtmlcT11EyTUOey4S1hbHsa/view
+- name: The Six Biases of Decision-Making
+  authority: LinkedIn Learning
+  date: '2021-09-22'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1FkiDkpq1RPDNrhBBokLfitWTuUTBb_Xe/view
+- name: Time-Tested Methods for Making
+  authority: LinkedIn Learning
+  date: '2021-09-22'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1JorsF52LDA3dFMSNq2rhIPfZCmQs448Q/view
+- name: Managing for Better Ideas
+  authority: LinkedIn Learning
+  date: '2021-09-22'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1B_YyLQNsENOblK1VHgzqwjBEgn6ELgMz/view
+- name: Executive Decision-Making
+  authority: LinkedIn Learning
+  date: '2021-09-22'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1cgTjYmSyrPdcvvAQuLRjaHZwOTNiBQyC/view
+- name: Communicating with Diplomacy and
+  authority: LinkedIn Learning
+  date: '2021-09-22'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1Q8aAgGaRrXf-XtSIe2mSJY0ToPnDbJXT/view
 - name: Visio 2021 Essential Training (Office
   authority: LinkedIn Learning
   date: '2021-10-07'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1MfqUlgsB6J9KvJ-F8k9S_womyquURKC9/view
+  drive_link: https://drive.google.com/file/d/1g2fM3a72Dwdj5Y744N0mN2ViK706AWs2/view
+- name: 'The Secret to Better Decisions: Stop'
+  authority: LinkedIn Learning
+  date: '2021-10-10'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1OFRy3I2NwAKYPXS-T0hC-wYenazHb5JC/view
+- name: 'Word: Mail Merge for Beginners'
+  authority: LinkedIn Learning
+  date: '2021-10-10'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/13LA4_GfRNAEtuPX8TEs4WI7a00ycthnA/view
 - name: 'Java: Build Automation with Maven'
   authority: LinkedIn Learning
   date: '2021-10-12'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/10-ofm5mxABOHJiid1Q4HJxtw5XiZFRQ9/view
+  drive_link: https://drive.google.com/file/d/161dCrSvOK5dHUdeB6l9KK_kDjlpRPzkY/view
 - name: Multi Module Build Automation with
   authority: LinkedIn Learning
   date: '2021-10-12'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1ibzmq34IKGi5QMu0p6AVlWOY1PDuh4T_/view
+  drive_link: https://drive.google.com/file/d/1tqIaak-fnHkxIpibnWq-WEBjd0JRc2iE/view
 - name: Learning Java Threads
   authority: LinkedIn Learning
   date: '2021-10-13'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/15SPfusQ94oDDmW7YNEylRD78q-LUYEv-/view
+  drive_link: https://drive.google.com/file/d/16ipwAtfMwa--NER4rbwyumBOhUrNmiHm/view
 - name: Advanced Java Programming
   authority: LinkedIn Learning
   date: '2021-10-14'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1ENUCbWYY3X7c_RnSuTip_eud2d4gaojw/view
+  drive_link: https://drive.google.com/file/d/1v3uJhEvLB_i4m3BtYdH7GJYzUZq2AX_P/view
 - name: 'Java EE 8: Web Services'
   authority: LinkedIn Learning
   date: '2021-10-16'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1uk3njqQE5ym0QjAnywAvIeQQLdnPk9l3/view
+  drive_link: https://drive.google.com/file/d/1-wVW_CaPtwEuQVC4jsfzN6ZnqdNRo1G_/view
+- name: Introducing Functional Programming
+  authority: LinkedIn Learning
+  date: '2021-10-16'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1ZPcxf4R6kwVMscyCaZMU0rNcgk66mFK1/view
+- name: Angular Essential Training (2019)
+  authority: LinkedIn Learning
+  date: '2021-10-18'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1MndZHzwCALzitMQd-GN_lj3PZQ95W5Lm/view
+- name: HTTP Essential Training
+  authority: LinkedIn Learning
+  date: '2021-10-19'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1uy3Yoj1K7obFcYQ23DxR6zU2uo-vTdz_/view
+- name: Designing RESTful APIs
+  authority: LinkedIn Learning
+  date: '2021-10-19'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/15Z3m1peoGns54hgblP_N46ozwGkhkFGp/view
+- name: Learning REST APIs
+  authority: LinkedIn Learning
+  date: '2021-10-19'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1v_A53OJVWWGiHeJq-JAebRqtGkRqcd-D/view
 - name: API Testing and Validation (2017)
   authority: LinkedIn Learning
   date: '2021-10-19'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1GUXrgsPs5Tx0ei580tqGe2elgTEOw-gw/view
+  drive_link: https://drive.google.com/file/d/1GRZ_JA-or0Je5WWSNhIALMGkGkll3Y2w/view
+- name: Learning npm the Node Package
+  authority: LinkedIn Learning
+  date: '2021-10-19'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1b7nP6gyY8gdNn-ggz-b6hY_0mXC1iAiT/view
 - name: Building Full-Stack Apps with React
   authority: LinkedIn Learning
   date: '2020-07-02'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1ZA3C1bjjCqRtAvPJKDuHjBIjNLYNUowW/view
+  drive_link: https://drive.google.com/file/d/1zF93ALS99KrHVWVvWQQv4WHKzq6Y77LQ/view
+- name: Scala First Look
+  authority: LinkedIn Learning
+  date: '2022-03-17'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1RiL6Ry4ZDjiJJnS7F9uSsbOgiT9Xnimh/view
+- name: Learning Angular (2018)
+  authority: LinkedIn Learning
+  date: '2022-03-22'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1JG1HfZ8vTGee3GTO4rXScibkIGIchOxS/view
+- name: Learning the OWASP Top 10 (2018)
+  authority: LinkedIn Learning
+  date: '2022-04-24'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/13HCPdqyG5dhcXUlBUBylzNNIcLEbAXeV/view
+- name: 'Programming Foundations: Web'
+  authority: LinkedIn Learning
+  date: '2022-04-24'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1OsfjzqSmzeugWRRpO2j5lBXt0dIX2zTP/view
+- name: Dynamic Application Security Testing
+  authority: LinkedIn Learning
+  date: '2022-04-24'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1aUu0F-K48reutLnhIhNc4RTem1-ho0od/view
+- name: 'Programming Foundations: Secure'
+  authority: LinkedIn Learning
+  date: '2022-04-24'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1YcIz_3T-CyojfBb_0G_rC_u_mAiHlk9i/view
+- name: Node.js Essential Training (2019)
+  authority: LinkedIn Learning
+  date: '2022-05-01'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1zRsKVyi3IbO8MgAod8_p-CHib0s_q-AH/view
 - name: React.js Essential Training (2020)
   authority: LinkedIn Learning
   date: '2021-03-30'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/14D7o5HY3n0ApEU-eARStd0W0yPAdPmCX/view
+  drive_link: https://drive.google.com/file/d/1VRL2w8wolwRbMWpARE3dgKDGiFzGgk8b/view
 - name: 'React.js: Building an Interface'
   authority: LinkedIn Learning
   date: '2022-05-07'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1acx7MRW2QTCRe9MbdM0vM19nK5Np6x6K/view
+  drive_link: https://drive.google.com/file/d/1pZPLhY-fYwb3yThXZyED5T3MiPUy76D-/view
 - name: 'React: Creating and Hosting a Full-'
   authority: LinkedIn Learning
   date: '2022-05-07'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1In0vtlcdNARPJqsLXb2pJFXbH1Xar2XD/view
-- name: 'React: Creating and Hosting a Full-'
-  authority: LinkedIn Learning
-  date: '2022-05-07'
-  image: linkedin_learning.png
-  cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1O6WWnxCu3-aA9avZGlYOx-HR5Wtt5R35/view
+  drive_link: https://drive.google.com/file/d/180fyF53YCUf6DFkzljk89TKGH8E9eTln/view
 - name: Building Modern Projects with React
   authority: LinkedIn Learning
   date: '2022-05-09'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1lwbLdqkVGIM-yfUaT12K2R0VAbrtLoYu/view
+  drive_link: https://drive.google.com/file/d/1NHy-1z7FU1xD8KTy89Ir7cusGv4bfQqC/view
 - name: 'Express Essentials: Build Powerful'
   authority: LinkedIn Learning
   date: '2022-05-23'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/11K3vjG8TAlPAXANs8n6-O7z2BObOw1Lj/view
+  drive_link: https://drive.google.com/file/d/1bPqPsM-yiTvLaZ2__QlBzyJAlaHt5o6A/view
 - name: 'Oracle Database 12c: Basic SQL'
   authority: LinkedIn Learning
   date: '2020-06-24'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1omI0zHFlL1Ro1S6Muk4Zus-7fS2eRQYG/view
+  drive_link: https://drive.google.com/file/d/14aB_rXX8qOrq8zExdYGbNhd7fNPiYjnj/view
+- name: Azure DevOps for Beginners (2021)
+  authority: LinkedIn Learning
+  date: '2021-08-26'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1UAjtjfMcbPZbk8d0h5981c1j8oZ5p-RJ/view
 - name: Learning Data Visualization with D3.js
   authority: LinkedIn Learning
   date: '2022-09-24'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1XioDAwRfJ0WEKi49v6YejS_OiUC6KEPW/view
+  drive_link: https://drive.google.com/file/d/1ky-YIqKAQq_iBoCj64amAw8MouPILik-/view
 - name: Python Essential Training (2022)
   authority: LinkedIn Learning
   date: '2022-10-03'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/13GVq1QXVIcB5cEdY0pu9RFhQxO0sgZAE/view
+  drive_link: https://drive.google.com/file/d/1ZoyAqVLBqUw7Z8eRtkKM2HlKx5L2475f/view
 - name: Python Object-Oriented
   authority: LinkedIn Learning
   date: '2022-10-03'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1Jrli8Lu59L1DMBgf52UPIDCttChaGpL6/view
+  drive_link: https://drive.google.com/file/d/15VhArU8jAR-3cIcdXCoAi1QbGA1iG_w0/view
+- name: Nail Your Python Interview
+  authority: LinkedIn Learning
+  date: '2022-10-03'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1ZNR1KuBw32aPReGzbtqTGwokcvuGU9du/view
 - name: AWS Certified Cloud Practitioner
   authority: LinkedIn Learning
   date: '2021-08-27'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1f9RCmxkv4zUhuwhNvNq8N-swVQgj6xiF/view
+  drive_link: https://drive.google.com/file/d/1WNkywWLKZQPZDr41FiXLxUlWGjOscsCX/view
 - name: 'Python Data Structures: Trees'
   authority: LinkedIn Learning
   date: '2022-10-05'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1_y5RUX2YkVnium2_mLTy14hHj_BVgEw7/view
+  drive_link: https://drive.google.com/file/d/1kyGOj8jjaXGJQcBP-_xBla0jX8PhN2ng/view
 - name: Advanced Python (2018)
   authority: LinkedIn Learning
   date: '2022-10-05'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1F8CvT_eZp7RElVyMjx0FQ-ttRdI5Mysi/view
+  drive_link: https://drive.google.com/file/d/1uf7ojYbijW8wmzGXVCCo-n_X9LclbTdJ/view
+- name: Insights from Influencers and Business
+  authority: LinkedIn Learning
+  date: '2022-11-01'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1pGmZ08aAJOVaExjxKPHTWjL1Hkd7sziU/view
+- name: How to Set Goals When Everything
+  authority: LinkedIn Learning
+  date: '2022-11-19'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1Nw7dKNGoqqjjN4MwxBD3axIXZISp1PJ5/view
+- name: The Six Morning Habits of High
+  authority: LinkedIn Learning
+  date: '2020-05-20'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1SYJxBufWpgSh7hv4tWB8HzrPkFxyOrXw/view
+- name: Business Writing Principles
+  authority: LinkedIn Learning
+  date: '2022-12-02'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1BkNgKj1DhaUMDRbns0GlfB16N6I9fWEu/view
+- name: Building Accountability into Your
+  authority: LinkedIn Learning
+  date: '2022-12-02'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1HJQItigRXGSJonqSiH5mQsMvOawYnGpc/view
+- name: Establishing Credibility as a Speaker
+  authority: LinkedIn Learning
+  date: '2022-12-02'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1Tc3_Jx4PEesmbhZ_ygBPJiV64Csxf5uN/view
+- name: Addressing Unconscious Bias as a
+  authority: LinkedIn Learning
+  date: '2022-12-03'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1jfpwMsFhrQrbVs8eHd_WbM837AWp4Np_/view
+- name: Mindfulness, Diversity, and the Quest
+  authority: LinkedIn Learning
+  date: '2022-12-03'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1vgF1NDl4Q_qee9UCd0IzFnfudcDlNsFp/view
 - name: Agile Foundations
   authority: LinkedIn Learning
   date: '2020-05-30'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1AUqUivCySYn9LWXypKPu4IBDeg_mB9jd/view
-- name: Agile Foundations
-  authority: LinkedIn Learning
-  date: '2020-05-31'
-  image: linkedin_learning.png
-  cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1CJLW28aDj5Adxoglg72Fcu8J9JpV6g6D/view
-- name: Agile Foundations
-  authority: LinkedIn Learning
-  date: '2020-05-30'
-  image: linkedin_learning.png
-  cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1B07I7kw9u0fhffi1n8ULvqgMDOJxS4jD/view
-- name: 'Cert Prep: PMI Agile Certified Practitioner (PMI-'
-  authority: LinkedIn Learning
-  date: '2022-12-15'
-  image: linkedin_learning.png
-  cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1Hs8b79ZVjJE1WyXCdOcLO9CpuBAGztjk/view
+  drive_link: https://drive.google.com/file/d/14QRI_m6UKB-1J16sQTKOXnx-ufyRwW11/view
 - name: 'Cert Prep: PMI Agile Certified'
   authority: LinkedIn Learning
   date: '2022-12-15'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1PqlAzsakFgZfME1JYiGLxpdEIcCkeL9V/view
+  drive_link: https://drive.google.com/file/d/1NwsTsPYfEZwFNycT8QotspGbVp2IAbno/view
+- name: Be a Better Manager by Motivating
+  authority: LinkedIn Learning
+  date: '2022-12-23'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1kUFdWRxz9l8YG9UR9XP8IuPzpaVAOSAy/view
+- name: Getting Things Done
+  authority: LinkedIn Learning
+  date: '2022-12-25'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1cgOZmZLOHNnhtHJgm81fh1C7dxo9fm0t/view
+- name: Writing a Business Case
+  authority: LinkedIn Learning
+  date: '2022-12-25'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1nzjsy9ZFMCb0HADe8jPcHbdpCovl_8QK/view
+- name: Time Management for Managers
+  authority: LinkedIn Learning
+  date: '2022-12-26'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1IU_OFTxhnyf0anDtheCgqPQ4P2mNU_ub/view
+- name: Communicating Nonverbally
+  authority: LinkedIn Learning
+  date: '2022-12-31'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1CrzFgLQSt7PcvJV0kxm21Xc8SweNuySF/view
+- name: Social Success at Work
+  authority: LinkedIn Learning
+  date: '2023-03-04'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1UQa8aTU-ZhOY6IPCbIqjoqa_jLyYSPnb/view
+- name: Building Customer Loyalty
+  authority: LinkedIn Learning
+  date: '2023-03-04'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/19ro13i7XvtzwQhhKsvUEXl3NmG13sR40/view
+- name: Solving Business Problems
+  authority: LinkedIn Learning
+  date: '2023-03-04'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1xwtzzX_Cg9GN7CmvgH6zwMGAcAo_8qTv/view
+- name: Prioritizing Your Tasks
+  authority: LinkedIn Learning
+  date: '2023-03-04'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1-5YERSJbXa-NzwIBaItM6rosBOKcdU5T/view
+- name: Enhancing Team Innovation
+  authority: LinkedIn Learning
+  date: '2023-03-04'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1CIEhGZ8C63sJ5iVYvFZh81eAEFQJGWcR/view
+- name: Leading through Relationships (2019)
+  authority: LinkedIn Learning
+  date: '2023-03-04'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1JmhDvLPaAuIoXCmbk9Y_i5hOlJ-bP7oy/view
+- name: Master Confident Presentations
+  authority: LinkedIn Learning
+  date: '2023-03-04'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1AEY04vQwcNkfCHDZDYagJMVMMvHfqUbc/view
+- name: Decision-Making Strategies
+  authority: LinkedIn Learning
+  date: '2023-03-04'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1WPMsp0YOBfCdzoLTfbxonbgJ13chYGuU/view
 - name: Postman Essential Training (2020)
   authority: LinkedIn Learning
   date: '2023-03-04'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1p1zx0syc2-X-YjQDT8LZmVfMIY4l864o/view
+  drive_link: https://drive.google.com/file/d/1HUDVgAEk7sbg69qH-M3S7B1uwcVlFj79/view
+- name: 'SharePoint Online Essential Training:'
+  authority: LinkedIn Learning
+  date: '2023-03-04'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1v0860fVESh9ke8glarZAf8UsUokmrzX2/view
+- name: Strategic Planning Foundations
+  authority: LinkedIn Learning
+  date: '2023-03-04'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1fuyoevCJ4nP4gaUqeHHJATQs7-6KGqhe/view
 - name: AWS Certified Cloud Practitioner
   authority: LinkedIn Learning
   date: '2021-08-27'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/174U_5z9st-BsaG7md0PL4_qTTT1eiYxl/view
+  drive_link: https://drive.google.com/file/d/193dqLrt_gfDiI2tkOE2O3K-7UdclMFjK/view
 - name: AWS Certified Cloud Practitioner
   authority: LinkedIn Learning
   date: '2021-06-28'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1XiFdz16vpXB86JkKwBZw51w3OYU5It4I/view
+  drive_link: https://drive.google.com/file/d/1y0BZGGnc-I_hYQSDhMEz56mJYp1bx0oG/view
 - name: AWS Certified Cloud Practitioner
   authority: LinkedIn Learning
   date: '2021-06-28'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1PnbEny8ERY6VXoa79jS2F4rY864jFLLT/view
+  drive_link: https://drive.google.com/file/d/1zOXuwhzQZ-sjRoM_oWkvhCGDnA75zsuU/view
+- name: Giving and Receiving Feedback
+  authority: LinkedIn Learning
+  date: '2023-03-04'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1mBtE3SM0YdQr0PMPhMRryxqn2uLuwN-o/view
+- name: 'Java Essential Training: Syntax and'
+  authority: LinkedIn Learning
+  date: '2023-06-17'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1nHiNIcnCIK3IyDJXH3mYraloglfOW7CJ/view
 - name: 'Java Essential Training: Objects and'
   authority: LinkedIn Learning
   date: '2023-06-17'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1U4YpfmlxxwBoAv0JGa4IY71oJ-uAselh/view
+  drive_link: https://drive.google.com/file/d/1NJLJQgH32Y8v2be9q4UeacxCHOkYr1_k/view
 - name: Learning JDBC (2019)
   authority: LinkedIn Learning
   date: '2021-06-14'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1Qoyboo4TuhkKNUd2y1Z8wNOHtro_xW5E/view
+  drive_link: https://drive.google.com/file/d/1m_rqdbMETmi7TGk8v8RWO4_VoW6nMnDd/view
 - name: Discover the Possibilities of
   authority: LinkedIn Learning
   date: '2023-06-24'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1Y_1optPE0vcW_N2CDkbl5OKtTvzOg1F1/view
+  drive_link: https://drive.google.com/file/d/1iBmY9hn7bUrisuUQyf8uyqaa81x4zbUj/view
 - name: Learning Java Collections
   authority: LinkedIn Learning
   date: '2023-07-01'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1I0sDfubYmR5766uWvHTWWzIV9apPsuRl/view
+  drive_link: https://drive.google.com/file/d/1_1mJ3b2Nv5dXkGQixtAqZzaMbLK2KWVO/view
 - name: 'Java Memory Management: Values'
   authority: LinkedIn Learning
   date: '2023-07-02'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1TaaENU2H0aBzqDwNWyTwbDIA9JhLeWs1/view
+  drive_link: https://drive.google.com/file/d/1wBw0bXyjGfiR6wmCmlaJN-nZ_mMGqifu/view
 - name: 'Java Memory Management:'
   authority: LinkedIn Learning
   date: '2023-07-03'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1GqrvVyYn-3Llej0UvHqkQ0w9_M8ftbgJ/view
-- name: Introduction to Prompt Engineering
-  authority: LinkedIn Learning
-  date: '2023-07-21'
-  image: linkedin_learning.png
-  cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1ppTF3ikUP2RPC1BDV6fOIceEppTdnrz1/view
+  drive_link: https://drive.google.com/file/d/1S_Z8dnwq8_ZsxCL0QgRe6TtPksOxpCV2/view
 - name: Java Exception Handling
   authority: LinkedIn Learning
   date: '2023-07-04'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1o7MF45O0rjIZr-gFWrYrYLEiyBZkO4gM/view
+  drive_link: https://drive.google.com/file/d/1ep9xI4VwHWoMIfben1sto977-qow62sh/view
+- name: Introduction to Prompt Engineering
+  authority: LinkedIn Learning
+  date: '2023-07-21'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1urNX403MJFE0faa_eAGAmpcwdaz7Tnt-/view
+- name: Performing under Pressure
+  authority: LinkedIn Learning
+  date: '2023-09-05'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/10G6gQnANc3HLWQceAfRkWy7EAsUOmefM/view
+- name: Acting Decisively
+  authority: LinkedIn Learning
+  date: '2023-09-10'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1tK89vAQEQnXIELw1bqf4gyQ_pU_iZRc2/view
+- name: Persuading Others
+  authority: LinkedIn Learning
+  date: '2023-09-09'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1nCN866TH_Nxlw8ikki2-JZJ52NOAtcWP/view
+- name: Building Resilience (2014)
+  authority: LinkedIn Learning
+  date: '2023-09-17'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1uV8Z7guhrDysIbedX7c6rHbzHZ0PHRJ1/view
 - name: Creating Your First Spring Boot
   authority: LinkedIn Learning
   date: '2021-07-07'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1edBytxkvyy5mlxKh1xVoGpFbKxb9rIse/view
+  drive_link: https://drive.google.com/file/d/1dM5VbiJy94oU-vXIW-ttv8aP5nc-6Dp8/view
+- name: Communicating with Empathy
+  authority: LinkedIn Learning
+  date: '2023-09-18'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/17jRmu_BeQFqPRjUpRPAKFzvFhraheeME/view
+- name: Overcoming Decision-Making Traps
+  authority: LinkedIn Learning
+  date: '2023-09-20'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/12bvDM0J5A6oguPXrM3o-bXp9yhoRSQzB/view
+- name: 'Selling with Stories, Part 2: Stories'
+  authority: LinkedIn Learning
+  date: '2023-09-20'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1-mVt3GgGu7N0AH8uTM8BWn-w4GZn7HQ1/view
+- name: Negotiation Skills
+  authority: LinkedIn Learning
+  date: '2023-09-20'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1vl7VhsSiDkeITd_xPvqbDZ3IG4qjtFeF/view
+- name: Developing Cross-Cultural
+  authority: LinkedIn Learning
+  date: '2023-09-20'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1Bo426TLYwlWs3HSfWLP6P-U1uvd66zUe/view
+- name: Managing a Diverse Team (2023)
+  authority: LinkedIn Learning
+  date: '2023-09-20'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1HZ7Zx_ouvsJSwV5CDBCFCi1zVevpCU54/view
+- name: 'Creating Significance: Choosing to'
+  authority: LinkedIn Learning
+  date: '2023-09-20'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1wczX8P2SlDEcJ3meJ4xZiv1hp-SHD0CE/view
+- name: Personal Effectiveness Tips
+  authority: LinkedIn Learning
+  date: '2023-09-20'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1V92VmVPTzAqV4b_rZRUpv7d5DD1JWTm_/view
+- name: Be an Effective Hybrid or Virtual
+  authority: LinkedIn Learning
+  date: '2023-09-22'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1IS_tH3ileAEcs6k_eIVKamIFrRzAzuVv/view
+- name: Negotiating Work Flexibility
+  authority: LinkedIn Learning
+  date: '2023-09-22'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1R3cZYLnwS4okCFwUy_tPHQLFYYulrfhl/view
+- name: Staying Organized While Working
+  authority: LinkedIn Learning
+  date: '2023-09-22'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1AwRwcDfCfKgRj9bk9V8OgPJtXITbmOdG/view
+- name: How to Stand Out Remotely
+  authority: LinkedIn Learning
+  date: '2023-09-22'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1ImSMoskP7GQPgcPXDelJeVeB2naN8gke/view
+- name: Virtual and Hybrid Meeting Essentials
+  authority: LinkedIn Learning
+  date: '2023-09-22'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/12pVF2xsKG6l7DEHOPL_hw4KEimq5fyYi/view
+- name: How to Set Boundaries and Protect
+  authority: LinkedIn Learning
+  date: '2023-09-22'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1xTWgTq3pE9-3nvyfdoNPR0_atiyR70NX/view
+- name: AWS Certified Solutions Architect -
+  authority: LinkedIn Learning
+  date: '2023-09-22'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1RgR8xTwnI3HKj0cVLKGfgi8_s_eWggVh/view
+- name: Writing and Delivering Speeches
+  authority: LinkedIn Learning
+  date: '2023-09-23'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1OFvxGXdMqkZcZ22GtJZE-kNP8neJZIF2/view
 - name: Django Essential Training (2021)
   authority: LinkedIn Learning
   date: '2023-09-24'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1ceXIBQktvIzouoV1qt8f_3GtECpys76F/view
+  drive_link: https://drive.google.com/file/d/1Dh3I6mgSCbJeXhu5N721muy56QmotPIB/view
+- name: How to Speak with Effortless
+  authority: LinkedIn Learning
+  date: '2023-09-25'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/17qWK_lCR7AJ2ZMa-Ii08vMCj4qpnoc-I/view
+- name: Communicating with Confidence
+  authority: LinkedIn Learning
+  date: '2023-10-06'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/11OGtKNVX8Hei7NHWW9v_nesMsZcRLeGU/view
 - name: Learning Spring with Spring Boot
   authority: LinkedIn Learning
   date: '2023-06-18'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1SCEroIGTUMDjFrKrejIUtAzsdzZg74QS/view
+  drive_link: https://drive.google.com/file/d/1UChcWpixcrvMX4G829L37uBlpyZLyroZ/view
+- name: Developing a Learning Mindset
+  authority: LinkedIn Learning
+  date: '2023-10-14'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1gMpEEzCyGnV0-Ataz8I2ivfVviq-XOwi/view
+- name: Asserting Yourself, an Empowered
+  authority: LinkedIn Learning
+  date: '2023-10-14'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1-XbHbKnEe6C_6N9jhRAs59wfBBAhshbo/view
+- name: Discovering Your Strengths
+  authority: LinkedIn Learning
+  date: '2023-10-14'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1dpGPF8NoAz0MW-Ji4NHiw1QfXK5qwupM/view
+- name: Learn Emotional Intelligence, the Key
+  authority: LinkedIn Learning
+  date: '2023-10-14'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1fDcCoh2bMPNII8BYoF4szDIeJcUwAY9N/view
+- name: Igniting Emotional Engagement
+  authority: LinkedIn Learning
+  date: '2023-10-14'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1YSbdjZS0TdIisAWaDgUXWW4O6tg49_iA/view
+- name: 'Mixtape: Learning Highlights on'
+  authority: LinkedIn Learning
+  date: '2023-10-14'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1X2ZFzowVkf2yZpLtZ_XFPYjQuHvUPwG6/view
+- name: The Surprising Power of Seeing
+  authority: LinkedIn Learning
+  date: '2023-10-14'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1P9hesxPypyvxiv2F2ndLHW_FPSbBy1yy/view
+- name: Lessons in Enlightened Leadership
+  authority: LinkedIn Learning
+  date: '2023-10-16'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1R-bN5etZh0cZA5ZIK8KdPsAstt2MZIJz/view
+- name: Leading like a Futurist
+  authority: LinkedIn Learning
+  date: '2023-10-16'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1_BSKlARcAoftB8lPRER56MTmg8CTcc9w/view
+- name: Subtle Shifts in Thinking for
+  authority: LinkedIn Learning
+  date: '2023-10-17'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1iM__B01GblSV0_hxx9JQcl2h9bJ_VgVb/view
+- name: Being Positive at Work
+  authority: LinkedIn Learning
+  date: '2023-10-17'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/16_mZRQne8NFCqUQcpOElgbVuYE2Mokep/view
+- name: Developing Adaptability as a
+  authority: LinkedIn Learning
+  date: '2023-10-17'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1DgI51x_ZTxSpOhOMNi36YMwZBT9ZBR0i/view
+- name: Aaron Dignan on Transformational
+  authority: LinkedIn Learning
+  date: '2023-10-17'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1iuNYhSBm8U-zshBlm7RD__The-_zFih2/view
+- name: Leading Your Team Through Change
+  authority: LinkedIn Learning
+  date: '2023-10-17'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1mxpwVKmjaxdhY7YFi8R_Mut0VClkAynB/view
+- name: Coaching Employees through
+  authority: LinkedIn Learning
+  date: '2023-10-18'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1nXNHm6wwddcgyb1BNNp2pVM_KDOJsKQ6/view
+- name: Working with High-Conflict People as
+  authority: LinkedIn Learning
+  date: '2023-10-18'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1b91HtSLvDsn7HkTmBlShJzH4QnMJtL1i/view
+- name: 'Difficult Situations: Solutions for'
+  authority: LinkedIn Learning
+  date: '2023-10-18'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1zVGSBHhPvxCcGLGDpPomi2U3NAuMTNke/view
+- name: 'Leadership Stories: 5-Minute Lessons'
+  authority: LinkedIn Learning
+  date: '2023-10-16'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/19--dtXeYqMnPGGj3x0y6q7-hGaDT3um3/view
+- name: Managing in Difficult Times
+  authority: LinkedIn Learning
+  date: '2023-10-17'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1zmvt-Ql74pxdv6H3Cp3DCsVh0yQ-Zxa1/view
+- name: 'Consulting Foundations: Client'
+  authority: LinkedIn Learning
+  date: '2023-10-20'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1ZD-aPzCw7I6tt46eqfH-JCEKXBomVKQY/view
+- name: Business Development Foundations
+  authority: LinkedIn Learning
+  date: '2023-10-20'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1y0IYp42pkwhNQ8h4bT1FFHAPvgaZWWy8/view
+- name: 'AWS and React: Creating Full-Stack'
+  authority: LinkedIn Learning
+  date: '2023-10-20'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1X3rg-lfHg3c6ygavs4OI9Ga_bkc3QsWh/view
+- name: Organization Design
+  authority: LinkedIn Learning
+  date: '2023-10-20'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1sKtKDIZR2-5j-zCnmYTmg2DE7rYc8Tfx/view
+- name: Developing Credibility as a Leader
+  authority: LinkedIn Learning
+  date: '2023-10-21'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/10n-A5QuPcsyAlm3bKygCfXCp9yUVexPZ/view
+- name: Learning webpack 4
+  authority: LinkedIn Learning
+  date: '2023-10-21'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/10ta1gaa5akou43FFW_kiXutqK5RKjtZD/view
+- name: Fred Kofman on Managing Conflict
+  authority: LinkedIn Learning
+  date: '2023-10-22'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1-y0Mg5__aVyLAisng6UqcSYSPKfmu7qz/view
 - name: "Developing\_CI/CD Solutions with"
   authority: LinkedIn Learning
   date: '2023-10-23'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1xkHEZdEfwfx_ud2rNUIlLRxzcW4GWr-E/view
+  drive_link: https://drive.google.com/file/d/1Nbuk9yudz4FNNLXvVuJSxOFw1BKrploN/view
+- name: Fred Kofman on Accountability
+  authority: LinkedIn Learning
+  date: '2023-10-22'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1Ft1wQ2Uqd6EV7QfAdkxlPlqJS1WrcGxd/view
+- name: Fred Kofman on Making
+  authority: LinkedIn Learning
+  date: '2023-10-24'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/15qHA2zynnRBezBYyf7F6q8ma9CI-9-Wq/view
+- name: Conflict Resolution Foundations
+  authority: LinkedIn Learning
+  date: '2023-10-24'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1Ga_eZNDb0drsCO42AhAsuhsM3xrkNdSJ/view
+- name: Delivering Results Effectively
+  authority: LinkedIn Learning
+  date: '2023-10-24'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1col0A2C0WO9uWB7WusrkzbnRjAt4mi7T/view
 - name: Introducing Maven
   authority: LinkedIn Learning
   date: '2020-06-30'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/15oYhdW2tAodZLftiFw9vgXjtVee_EFiD/view
+  drive_link: https://drive.google.com/file/d/1TRif_LI79cB6bS9HUO9xFGqrg4X2OhBF/view
+- name: 'Powerless to Powerful: Taking Control'
+  authority: LinkedIn Learning
+  date: '2023-10-21'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1STN9gV7yCzVua0sZz1u4w0jH44A9R6bh/view
+- name: React Hooks
+  authority: LinkedIn Learning
+  date: '2022-05-08'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1i829cyFElcLl05MvFYR8yvzPsIxjayei/view
+- name: Enhancing Resilience
+  authority: LinkedIn Learning
+  date: '2023-12-17'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1cdDj40yDrSfUse4UZ_O_JIOfbDJ1S_n7/view
+- name: Microsoft Azure DevOps Engineer Expert (AZ-400)
+  authority: LinkedIn Learning
+  date: '2024-01-02'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1IavWVPE45ZG9mklVyhDUKbjFLuBxWQgI/view
+- name: Microsoft Azure DevOps Engineer Expert (AZ-400)
+  authority: LinkedIn Learning
+  date: '2024-01-02'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1_gIiNG6EPrjE8lYFpi9bcDKg8fGo04Uf/view
 - name: Microsoft Azure DevOps Engineer Expert (AZ-400)
   authority: LinkedIn Learning
   date: '2024-01-13'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1C1v6mbgpDfYxpk3-XzCfP-pm0ea9aUT4/view
-- name: Microsoft Azure DevOps Engineer Expert (AZ-400)
+  drive_link: https://drive.google.com/file/d/1QDpY8D6gKtSdWV15XUauSEpRHPgpBjr7/view
+- name: Take a More Creative Approach to
   authority: LinkedIn Learning
-  date: '2024-01-02'
+  date: '2023-12-17'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1TB4NbEofehrk1OLedtF2PNExSLRut8BS/view
-- name: Microsoft Azure DevOps Engineer Expert (AZ-400)
-  authority: LinkedIn Learning
-  date: '2024-01-02'
-  image: linkedin_learning.png
-  cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1qz9M7jcbIg9FTmLL8pxfOyb_Qys2uJVa/view
-- name: 'LinkedIn AI Academy AI-100: 2'
-  authority: LinkedIn Learning
-  date: '2024-02-11'
-  image: linkedin_learning.png
-  cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1YbFQGD__J9oqCRcr1DUuB8Rgd7wzKQtY/view
+  drive_link: https://drive.google.com/file/d/1D6YO95A_IZV6tEf0V5ZMHaldrHCjiwcS/view
 - name: 'LinkedIn AI Academy AI-100: 1'
   authority: LinkedIn Learning
   date: '2024-02-11'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1ZU6zMCz2c7dauvETOIKQgjPrHazU1o8Q/view
+  drive_link: https://drive.google.com/file/d/1q6sw9Imu2QWDivDmLme3SuYtAoEUgV2D/view
+- name: 'LinkedIn AI Academy AI-100: 2'
+  authority: LinkedIn Learning
+  date: '2024-02-11'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1dMiJ-KkEL4z-ILojew1d3nwLB1aTUGRT/view
+- name: Building RESTful APIs with Node.js
+  authority: LinkedIn Learning
+  date: '2024-05-06'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/189w6OOahkC1IXMtLCGECJWgkgSQ76hTr/view
 - name: Learning Node.js
   authority: LinkedIn Learning
   date: '2022-02-21'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1ih8roOJrfrQMCWsZ6Y-NhKSO7jc5FMDB/view
+  drive_link: https://drive.google.com/file/d/1v7wfUB5xbDAT-lOtgev93yW7cNhVX21Q/view
+- name: Learning End-to-End Testing with Jest
+  authority: LinkedIn Learning
+  date: '2023-01-10'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/15mcahq8GB5Z_43yadiAsUaA2AlrKFfuA/view
 - name: Spring Boot 2.0 Essential Training
   authority: LinkedIn Learning
   date: '2021-07-07'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1hzYXHo3DhQf6laOb46X2HKJLO8QK_UWR/view
+  drive_link: https://drive.google.com/file/d/1ZfrN8_FaeGSvgERDBwKXsyRYAsZZq_h_/view
+- name: Extending, Securing, and Dockerizing
+  authority: LinkedIn Learning
+  date: '2021-07-07'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/18xCpEUKezjXniO1L-QI63C0FROAiIOZt/view
 - name: React.js Essential Training
   authority: LinkedIn Learning
   date: '2023-06-09'
   image: linkedin_learning.png
   cred_link: http://linkedin.com/learning
-  drive_link: https://drive.google.com/file/d/1EeEAlEvE72SQKmANWdSFWXfk4Bg-pPvO/view
+  drive_link: https://drive.google.com/file/d/1vpLc54C0al7eZjs6eLziLOzmuGyAM8Ob/view
+- name: Building Modern UIs with React
+  authority: LinkedIn Learning
+  date: '2023-11-25'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1pbbdwJeyQhsDzbq3z0OAtid3iPu8I0QO/view
+- name: 'React: Design Patterns (2021)'
+  authority: LinkedIn Learning
+  date: '2022-05-18'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1CNwW_1ydme_ZuDmhk6ItUt28Y2RFJSfm/view
+- name: How Getting Curious Helps You
+  authority: LinkedIn Learning
+  date: '2025-03-16'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1rPfcPYCViImgL413tIPngZsFOABtl-Qv/view
+- name: Crafting Problem and Solution
+  authority: LinkedIn Learning
+  date: '2025-03-16'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1HVk6K9OO3xmUeqtc3RTK_QNEHL37szlM/view
+- name: 'Customer Service: Problem Solving'
+  authority: LinkedIn Learning
+  date: '2025-03-16'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1yAbvxeS61DByaaK9F7ev5g9D5amYRJID/view
+- name: Managing Self-Doubt to Tackle
+  authority: LinkedIn Learning
+  date: '2025-03-16'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1ju0d2kgFfCzP0EdMH-E9ZXxdii_0Ke3k/view
+- name: 'Project Management: Solving'
+  authority: LinkedIn Learning
+  date: '2025-03-17'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1yD2wOFfVAg_6XZ_H1ob09Ry0A9Fucj8_/view
+- name: 'Learning Design Thinking: Lead'
+  authority: LinkedIn Learning
+  date: '2025-03-17'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1eukp9X8oPmyiyziftj4wCu3vqupCRwN7/view
+- name: Leading with Innovation
+  authority: LinkedIn Learning
+  date: '2025-03-17'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1bzE-EeXcfb4jIfZCA8UnbMsEKpSUNFdk/view
+- name: Unlock Your Team's Creativity
+  authority: LinkedIn Learning
+  date: '2025-03-17'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1NMtS-pkLyIgm5kGn_hVVjCI7IaQ88wKW/view
+- name: Creating GitHub Portfolios
+  authority: LinkedIn Learning
+  date: '2025-02-03'
+  image: linkedin_learning.png
+  cred_link: http://linkedin.com/learning
+  drive_link: https://drive.google.com/file/d/1LSOF1xV5OcpSHeazIEldfp_QClxFBtRL/view
