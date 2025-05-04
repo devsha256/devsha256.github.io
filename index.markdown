@@ -20,7 +20,7 @@ permalink: /
   <p><a href="/repos">#[ Browse My GitHub Repos ]</a></p>
   <p>
     <a href="/assets/resume.pdf" download>#[ ⬇️ Download </a>/
-    <a  target="_blank" href="https://drive.google.com/file/d/19SKiTkoq-ArgmpLu-o5r8y6ZTk0OjDis/view?usp=sharing">
+    <a  target="_blank" href="https://drive.google.com/drive/u/0/folders/1qyy3tsfxnUHBMlH4toR80kmF8JcdiDJs">
      View 🌎 My Resume ]
     </a> 
   </p>
