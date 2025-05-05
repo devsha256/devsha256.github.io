@@ -1,0 +1,14 @@
+.page-link {
+    text-decoration: none;
+    color: #555;
+}
+
+.page-link.active {
+    font-weight: bold;
+    color: #0073e6; /* Highlight active link */
+}
+  
+.site-title.active {
+    color: #0073e6; /* Highlight active link */
+}
+  
