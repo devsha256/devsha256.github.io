@@ -46,15 +46,20 @@ body {
 .tooltip-box {
     display: none;
     position: absolute;
-    top: 120%;
-    left: 0;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: #000;
     color: #fff;
     padding: 8px 12px;
     border-radius: 4px;
-    white-space: nowrap;
     font-size: 13px;
+    white-space: normal;
+    max-width: 250px;
+    min-width: 120px;
     z-index: 1000;
+    text-align: left;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .tooltip:hover .tooltip-box {
