@@ -11,6 +11,7 @@ nav_include: no
 <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
 
 <script>
+  const PAGE_NUMBER = 1;
   const PAGE_SIZE = 1;
   const { useState, useEffect } = React;
 
@@ -20,12 +21,14 @@ nav_include: no
   function getParams() {
     const searchParams = new URLSearchParams(window.location.search);
     const uuid = searchParams.get("id");
-    const page = parseInt(searchParams.get("page")) || null;
-    return { uuid, page };
+    const page = parseInt(searchParams.get("page")) || PAGE_NUMBER;
+    const size = parseInt(searchParams.get("size")) || PAGE_SIZE;
+    return { uuid, page, size };
   }
 
   function CertificationApp() {
-    const { uuid, page } = getParams();
+    const { uuid, page, size } = getParams();
+    const [pageSize, setPageSize] = useState(size);
     const [currentPage, setCurrentPage] = useState(1);
 
     useEffect(() => {
@@ -37,42 +40,65 @@ nav_include: no
           index = matchIndex;
         }
       } else if (page) {
-        index = (page - 1) * PAGE_SIZE;
+        const pageIndex = (page - 1) * pageSize;
+        if (pageIndex >= 0 && pageIndex < sortedCerts.length) {
+          index = pageIndex;
+        }
       }
 
-      const newPage = Math.floor(index / PAGE_SIZE) + 1;
+      const newPage = Math.floor(index / pageSize) + 1;
       setCurrentPage(newPage);
-      updateURL(sortedCerts[index]?.id, newPage);
+
+      if (pageSize === 1) {
+        updateURL(sortedCerts[index]?.id, newPage, pageSize);
+      } else {
+        updateURL(null, newPage, pageSize);
+      }
     }, []);
 
-    function updateURL(id, page) {
-      if (id) {
-        const newUrl = `/credentials/certifications/?id=${id}&page=${page}`;
-        history.replaceState(null, '', newUrl);
+    function updateURL(id, page, size) {
+      const searchParams = new URLSearchParams();
+      if (id && size === 1) {
+        searchParams.set("id", id);
+      } else {
+        searchParams.set("size", size);
       }
+      searchParams.set("page", page);
+      const newUrl = `/credentials/certifications/?${searchParams.toString()}`;
+      history.replaceState(null, '', newUrl);
     }
 
-    const startIndex = (currentPage - 1) * PAGE_SIZE;
-    const endIndex = startIndex + PAGE_SIZE;
+    const startIndex = (currentPage - 1) * pageSize;
+    const endIndex = startIndex + pageSize;
     const visibleCerts = sortedCerts.slice(startIndex, endIndex);
 
     const handleNext = () => {
       const newPage = currentPage + 1;
       setCurrentPage(newPage);
-      updateURL(sortedCerts[(newPage - 1) * PAGE_SIZE]?.id, newPage);
+      const index = (newPage - 1) * pageSize;
+      if (pageSize === 1) {
+        updateURL(sortedCerts[index]?.id, newPage, pageSize);
+      } else {
+        updateURL(null, newPage, pageSize);
+      }
     };
 
     const handlePrev = () => {
       const newPage = currentPage - 1;
       setCurrentPage(newPage);
-      updateURL(sortedCerts[(newPage - 1) * PAGE_SIZE]?.id, newPage);
+      const index = (newPage - 1) * pageSize;
+      if (pageSize === 1) {
+        updateURL(sortedCerts[index]?.id, newPage, pageSize);
+      } else {
+        updateURL(null, newPage, pageSize);
+      }
     };
 
     return React.createElement('div', { className: 'certifications' },
       React.createElement('div', { className: 'pagination' },
         React.createElement('button', { onClick: handlePrev, disabled: currentPage === 1 }, 'Previous'),
-        ` Page ${currentPage} / ${Math.ceil(sortedCerts.length / PAGE_SIZE)} `,
-        React.createElement('button', { onClick: handleNext, disabled: currentPage === Math.ceil(sortedCerts.length / PAGE_SIZE) }, 'Next')
+        ` Page ${currentPage} / ${Math.ceil(sortedCerts.length / pageSize)} `,
+        React.createElement('button', { onClick: handleNext, disabled: currentPage === Math.ceil(sortedCerts.length / pageSize) }, 'Next')
       ),
       React.createElement('ul', { className: 'certification-list' },
         visibleCerts.map(cert =>
@@ -111,8 +137,8 @@ nav_include: no
   }
 
   document.addEventListener('DOMContentLoaded', () => {
-    const { uuid } = getParams();
-    if (!uuid && sortedCerts.length > 0) {
+    const { uuid, page, size } = getParams();
+    if (!uuid && !page && sortedCerts.length > 0) {
       const firstId = sortedCerts[0].id;
       const newUrl = `/credentials/certifications/?id=${firstId}&page=1`;
       history.replaceState(null, '', newUrl);
