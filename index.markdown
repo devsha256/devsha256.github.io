@@ -21,19 +21,16 @@ permalink: /
 </p>
 
 ---
-
-<div style="font-size: 1.5em; line-height: 1.5em;">
-  <p><a href="/projects">#[ Check My Projects ]</a></p>
-  <p><a href="/credentials">#[ View My Credentials ]</a></p>
-  <p><a href="/repositories">#[ Browse My GitHub Repos ]</a></p>
-  <p>
-    <a href="/assets/resume.pdf" download>#[ ⬇️ Download </a>/
-    <a  target="_blank" href="{{ site.resume_drive_link}}">
-     View 🌎 My Resume ]
-    </a> 
-  </p>
+<div class="index-links">
+  <a href="/projects" class="index-link">💡 Check My Projects</a>
+  <a href="/credentials" class="index-link">🎓 View My Credentials</a>
+  <a href="/repositories" class="index-link">💻 Browse My GitHub Repos</a>
+  <div class="resume-links">
+    📄 
+    <a href="/assets/resume.pdf" download class="resume-link">Download</a> /
+    <a href="{{ site.resume_drive_link }}" target="_blank" class="resume-link">View 🌍 My Resume</a>
+  </div>
 </div>
-
 ---
 <style>
   .inline-notice {
@@ -59,6 +56,41 @@ permalink: /
     0% { opacity: 0.6; }
     50% { opacity: 1; }
     100% { opacity: 0.6; }
+  }
+  
+  .index-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem; /* tighter spacing */
+    font-size: 1.1em;
+    margin: 0.5rem 0; /* reduce top and bottom margin */
+    line-height: 1.3em;
+  }
+
+  .index-link,
+  .resume-link {
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: 500;
+    transition: transform 0.2s ease, color 0.3s ease;
+    border-bottom: 1px solid transparent;
+  }
+
+  .index-link:hover,
+  .resume-link:hover {
+    color: #007acc;
+    transform: translateX(4px);
+    border-bottom: 1px solid #007acc;
+  }
+
+  .resume-links {
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    flex-wrap: wrap;
+    margin-top: 0.3rem;
   }
 </style>
 <script>
