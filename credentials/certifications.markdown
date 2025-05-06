@@ -5,43 +5,124 @@ permalink: /credentials/certifications/
 nav_include: no
 ---
 
-<div class="certifications">
+<div id="certifications-root"></div>
 
-  <div class="pagination">
-    <button id="prev-button" disabled>Previous</button>
-    <span id="current-page">1</span> / <span id="total-pages">{{ site.data.certifications | size }}</span>
-    <button id="next-button">Next</button>
-  </div>
+<script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
 
-  <ul class="certification-list">
-    {% assign sorted_certifications = site.data.certifications | sort: 'date' | reverse %}
-    {% for cert in sorted_certifications %}
-    <li class="certification-item" id="cert-{{ forloop.index }}">
-      <a href="{{cert.cred_link}}" target="_blank">
-        <img src="/assets/img/certifications/{{ cert.image }}" alt="{{ cert.name }}" class="cert-logo" />
-      </a>
-      <h2 class="cert-name">{{ cert.name }}</h2>
-      <p><strong>Authority:</strong> {{ cert.authority }}</p>
-      <p><strong>Date:</strong> {{ cert.date }}</p>
-      <p><strong>Credential ID:</strong> {{ cert.credential_id }}</p>
-      <p class="verify-row">
-        <strong>Verify it live:</strong>
-        <a href="{{ cert.drive_link }}" target="_blank" class="stars-container" title="View Credential">
-          <span class="stars">
-            {% for i in (1..5) %}
-            <svg class="star" viewBox="0 0 24 24" width="26" height="26" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 .587l3.668 7.57L24 9.748l-6 5.848 1.415 8.258L12 19.771l-7.415 4.083L6 15.596 0 9.748l8.332-1.591z" />
-            </svg>
-            
-            {% endfor %}
-          </span>
-        </a>
-      </p>
-    </li>
-    {% endfor %}
-  </ul>
-    <div class="instruction" style="position: fixed; bottom: 0; left: 0; width: 100%; background-color: #f8f8f8; color: #555; padding: 10px; text-align: center; z-index: 1000; animation: ziggle 0.5s infinite alternate;">Click on the verify star to see a live document.</div>
-</div>
+<script>
+  const PAGE_SIZE = 1;
+  const { useState, useEffect } = React;
+
+  const certifications = {{ site.data.certifications | jsonify }};
+  const sortedCerts = certifications.slice().sort((a, b) => new Date(b.date) - new Date(a.date));
+
+  function getParams() {
+    const searchParams = new URLSearchParams(window.location.search);
+    const uuid = searchParams.get("id");
+    const page = parseInt(searchParams.get("page")) || null;
+    return { uuid, page };
+  }
+
+  function CertificationApp() {
+    const { uuid, page } = getParams();
+    const [currentPage, setCurrentPage] = useState(1);
+
+    useEffect(() => {
+      let index = 0;
+
+      if (uuid) {
+        const matchIndex = sortedCerts.findIndex(cert => cert.id === uuid);
+        if (matchIndex !== -1) {
+          index = matchIndex;
+        }
+      } else if (page) {
+        index = (page - 1) * PAGE_SIZE;
+      }
+
+      const newPage = Math.floor(index / PAGE_SIZE) + 1;
+      setCurrentPage(newPage);
+      updateURL(sortedCerts[index]?.id, newPage);
+    }, []);
+
+    function updateURL(id, page) {
+      if (id) {
+        const newUrl = `/credentials/certifications/?id=${id}&page=${page}`;
+        history.replaceState(null, '', newUrl);
+      }
+    }
+
+    const startIndex = (currentPage - 1) * PAGE_SIZE;
+    const endIndex = startIndex + PAGE_SIZE;
+    const visibleCerts = sortedCerts.slice(startIndex, endIndex);
+
+    const handleNext = () => {
+      const newPage = currentPage + 1;
+      setCurrentPage(newPage);
+      updateURL(sortedCerts[(newPage - 1) * PAGE_SIZE]?.id, newPage);
+    };
+
+    const handlePrev = () => {
+      const newPage = currentPage - 1;
+      setCurrentPage(newPage);
+      updateURL(sortedCerts[(newPage - 1) * PAGE_SIZE]?.id, newPage);
+    };
+
+    return React.createElement('div', { className: 'certifications' },
+      React.createElement('div', { className: 'pagination' },
+        React.createElement('button', { onClick: handlePrev, disabled: currentPage === 1 }, 'Previous'),
+        ` Page ${currentPage} / ${Math.ceil(sortedCerts.length / PAGE_SIZE)} `,
+        React.createElement('button', { onClick: handleNext, disabled: currentPage === Math.ceil(sortedCerts.length / PAGE_SIZE) }, 'Next')
+      ),
+      React.createElement('ul', { className: 'certification-list' },
+        visibleCerts.map(cert =>
+          React.createElement('li', { key: cert.id, className: 'certification-item' },
+            React.createElement('a', { href: cert.cred_link, target: '_blank' },
+              React.createElement('img', { src: `/assets/img/certifications/${cert.image}`, alt: cert.name, className: 'cert-logo' })
+            ),
+            React.createElement('h2', { className: 'cert-name' }, cert.name),
+            React.createElement('p', null, React.createElement('strong', null, 'Authority: '), cert.authority),
+            React.createElement('p', null, React.createElement('strong', null, 'Date: '), cert.date),
+            React.createElement('p', null, React.createElement('strong', null, 'Credential ID: '), cert.credential_id),
+            React.createElement('p', { className: 'verify-row' },
+              React.createElement('strong', null, 'Verify it live: '),
+              React.createElement('a', { href: cert.drive_link, target: '_blank', className: 'stars-container', title: 'View Credential' },
+                React.createElement('span', { className: 'stars' },
+                  Array.from({ length: 5 }, (_, i) =>
+                    React.createElement('svg', {
+                      key: i,
+                      className: 'star',
+                      viewBox: '0 0 24 24',
+                      width: 26,
+                      height: 26,
+                      xmlns: 'http://www.w3.org/2000/svg'
+                    },
+                      React.createElement('path', { d: 'M12 .587l3.668 7.57L24 9.748l-6 5.848 1.415 8.258L12 19.771l-7.415 4.083L6 15.596 0 9.748l8.332-1.591z' })
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+      ),
+      React.createElement('div', { className: 'instruction' }, 'Click on the verify star to see a live document.')
+    );
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const { uuid } = getParams();
+    if (!uuid && sortedCerts.length > 0) {
+      const firstId = sortedCerts[0].id;
+      const newUrl = `/credentials/certifications/?id=${firstId}&page=1`;
+      history.replaceState(null, '', newUrl);
+    }
+    ReactDOM.render(
+      React.createElement(CertificationApp),
+      document.getElementById('certifications-root')
+    );
+  });
+</script>
 
 <style>
   .certifications {
@@ -55,7 +136,6 @@ nav_include: no
   }
 
   .certification-item {
-    display: none;
     border-bottom: 2px solid #ddd;
     padding: 15px;
     margin-bottom: 20px;
@@ -111,6 +191,20 @@ nav_include: no
   .stars-container:hover .star {
     fill: gold;
   }
+
+  .instruction {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f8f8f8;
+    color: #555;
+    padding: 10px;
+    text-align: center;
+    z-index: 1000;
+    animation: ziggle 0.5s infinite alternate;
+  }
+
   @keyframes ziggle {
     0% {
       transform: translateX(-5px);
@@ -119,67 +213,4 @@ nav_include: no
       transform: translateX(5px);
     }
   }
-
-  .star-animated {
-    animation: ziggle 0.5s infinite alternate;
-  }
-
-  .star-paused {
-    animation-play-state: paused;
-  }
 </style>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const items = document.querySelectorAll(".certification-item");
-    const prevButton = document.getElementById("prev-button");
-    const nextButton = document.getElementById("next-button");
-    const currentPageSpan = document.getElementById("current-page");
-    const totalPagesSpan = document.getElementById("total-pages");
-    const instructionDiv = document.querySelector('.instruction');
-    const starElements = document.querySelectorAll('.stars svg'); // Select all star SVGs
-
-    starElements.forEach(star => {
-      star.addEventListener('mouseenter', () => {
-        instructionDiv.style.animationPlayState = 'paused';
-      });
-
-      star.addEventListener('mouseleave', () => {
-        instructionDiv.style.animationPlayState = 'running';
-      });
-    });
-
-    let currentPage = 1;
-    const totalPages = items.length;
-
-    function showPage(index) {
-      items.forEach((item, i) => {
-        item.style.display = i === index ? "block" : "none";
-      });
-
-      currentPageSpan.textContent = currentPage;
-      totalPagesSpan.textContent = totalPages;
-      prevButton.disabled = currentPage === 1;
-      nextButton.disabled = currentPage === totalPages;
-    }
-
-    function nextPage() {
-      if (currentPage < totalPages) {
-        currentPage++;
-        showPage(currentPage - 1);
-      }
-    }
-
-    function prevPage() {
-      if (currentPage > 1) {
-        currentPage--;
-        showPage(currentPage - 1);
-      }
-    }
-
-    nextButton.addEventListener("click", nextPage);
-    prevButton.addEventListener("click", prevPage);
-
-    if (totalPages > 0) showPage(0);
-  });
-</script>
