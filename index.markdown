@@ -3,10 +3,18 @@ layout: default
 permalink: /
 ---
 
-<h1>Hi there! 👋</h1>
+<h1>
+  Hi there! 👋
+  <span class="inline-notice">
+    (I am <a href="https://www.linkedin.com/in/{{site.linkedin_username }}/"
+      target="_blank">#OpenToWork</a> & 
+    <a href="/notice-period.html">Serving Notice Period</a>)
+  </span>
+</h1>
+
 
 <p>
-  I am Saddam. With over <strong><span id="yearsOfExperience"></span></strong> years of experience specializing in API integration, particularly with technologies like MuleSoft, I have developed strong skills in software development. Along the way, I've earned industry-recognized certifications, including those in MuleSoft Development and Anypoint Platform Architecture. While MuleSoft has been central to my career, my experience extends beyond it. In my current organization, I am also an "Elevated Wings1 Certified - Full-Stack JavaScript Developer (MERN)," a program that deepened my expertise in integration patterns using JavaScript.
+   With over <strong><span id="yearsOfExperience"></span></strong> years of experience specializing in API integration, particularly with technologies like MuleSoft, I have developed strong skills in software development. Along the way, I've earned industry-recognized certifications, including those in MuleSoft Development and Anypoint Platform Architecture. While MuleSoft has been central to my career, my experience extends beyond it. In my current organization, I am also an "Elevated Wings1 Certified - Full-Stack JavaScript Developer (MERN)," a program that deepened my expertise in integration patterns using JavaScript.
 </p>
 <p>
     Automation has been key to my success, especially in testing, whether it’s unit or integration testing. I'm familiar with various architectural patterns, including ETL, real-time, and asynchronous Pub/Sub models. If you know of any projects or teams that could benefit from my skills, please feel free to connect!
@@ -20,14 +28,39 @@ permalink: /
   <p><a href="/repositories">#[ Browse My GitHub Repos ]</a></p>
   <p>
     <a href="/assets/resume.pdf" download>#[ ⬇️ Download </a>/
-    <a  target="_blank" href="https://drive.google.com/file/d/1HqgHimaWWq0d6bTVEAHOlKftVPfpmwsI/view?usp=sharing">
+    <a  target="_blank" href="{{ site.resume_drive_link}}">
      View 🌎 My Resume ]
     </a> 
   </p>
 </div>
 
 ---
+<style>
+  .inline-notice {
+    font-size: 0.6em;
+    font-weight: bold;
+    color: #b30000;
+    margin-left: 10px;
+    animation: pulse-inline 1.5s infinite;
+  }
 
+  .inline-notice a {
+    color: #d32f2f;
+    text-decoration: none;
+    border-bottom: 1px dashed #d32f2f;
+  }
+
+  .inline-notice a:hover {
+    color: #800000;
+    border-bottom-style: solid;
+  }
+
+  @keyframes pulse-inline {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.6; }
+  }
+</style>
 <script>
 function calculateExperience() {
   const startDate = new Date("2020-02-24");
