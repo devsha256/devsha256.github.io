@@ -12,15 +12,8 @@ permalink: /
   </span>
 </h1>
 
+<p id="summary"></p>
 
-<p>
-   With over <strong><span id="yearsOfExperience"></span></strong> years of experience specializing in API integration, particularly with technologies like MuleSoft, I have developed strong skills in software development. Along the way, I've earned industry-recognized certifications, including those in MuleSoft Development and Anypoint Platform Architecture. While MuleSoft has been central to my career, my experience extends beyond it. In my current organization, I am also an "Elevated Wings1 Certified - Full-Stack JavaScript Developer (MERN)," a program that deepened my expertise in integration patterns using JavaScript.
-</p>
-<p>
-    Automation has been key to my success, especially in testing, whether it’s unit or integration testing. I'm familiar with various architectural patterns, including ETL, real-time, and asynchronous Pub/Sub models. If you know of any projects or teams that could benefit from my skills, please feel free to connect!
-</p>
-
----
 <div class="index-links">
   <a href="/projects" class="index-link">💡 Check My Projects</a>
   <a href="/credentials" class="index-link">🎓 View My Credentials</a>
@@ -31,7 +24,37 @@ permalink: /
     <a href="{{ site.resume_drive_link }}" target="_blank" class="resume-link">View 🌍 My Resume</a>
   </div>
 </div>
----
+
+<script>
+function calculateExperience() {
+  const startDate = new Date("2020-02-24");
+  const now = new Date();
+  const months = (now.getFullYear() - startDate.getFullYear()) * 12 + now.getMonth() - startDate.getMonth();
+  const years = Math.floor(months / 12);
+  const remMonths = months % 12;
+  return `${years}.${remMonths.toString().padStart(2, '0')}`;
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const experience = calculateExperience();
+  const summaries = {{ site.data.summaries | jsonify }};
+  const randomIndex = Math.floor(Math.random() * summaries.length);
+  let summary = summaries[randomIndex];
+  summary = summary.replaceAll('{years}', experience);
+
+  // Parse multiline YAML block and inject into a paragraph tag
+  const lines = summary.split('\n');
+  let formatted = "";
+  lines.forEach(line => {
+    if (line.trim()) {
+      formatted += `<p>${line.trim()}</p>`;
+    }
+  });
+
+  document.getElementById("summary").innerHTML = formatted;
+});
+</script>
+
 <style>
   .inline-notice {
     font-size: 0.6em;
@@ -57,14 +80,20 @@ permalink: /
     50% { opacity: 1; }
     100% { opacity: 0.6; }
   }
-  
+
   .index-links {
+    position: sticky;
+    bottom: 0; /* Stick directly to the bottom of the viewport */
+    background: #ffffff;
+    padding: 0.8rem 1rem;
+    margin-top: 2rem; /* Optional: separate from summary above */
+    z-index: 10;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.05);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.4rem; /* tighter spacing */
+    gap: 0.4rem;
     font-size: 1.1em;
-    margin: 0.5rem 0; /* reduce top and bottom margin */
     line-height: 1.3em;
   }
 
@@ -79,12 +108,14 @@ permalink: /
 
   .index-link:hover,
   .resume-link:hover {
+    text-decoration: none;
     color: #007acc;
     transform: translateX(4px);
     border-bottom: 1px solid #007acc;
   }
 
   .resume-links {
+    text-decoration: none;
     font-weight: 500;
     display: flex;
     align-items: center;
@@ -93,14 +124,3 @@ permalink: /
     margin-top: 0.3rem;
   }
 </style>
-<script>
-function calculateExperience() {
-  const startDate = new Date("2020-02-24");
-  const now = new Date();
-  const months = (now.getFullYear() - startDate.getFullYear()) * 12 + now.getMonth() - startDate.getMonth();
-  const years = Math.floor(months / 12);
-  const remMonths = months % 12;
-  document.getElementById("yearsOfExperience").innerText = `${years}.${remMonths.toString().padStart(2, '0')}`;
-}
-document.addEventListener("DOMContentLoaded", calculateExperience);
-</script>
