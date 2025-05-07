@@ -154,7 +154,6 @@ document.addEventListener('DOMContentLoaded', () => {
 <style>
 .feedbacks {
   font-family: Arial, sans-serif;
-  margin: 20px;
 }
 
 .feedback-list {
@@ -164,7 +163,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 .feedback-item {
   border-bottom: 2px solid #ddd;
-  padding: 15px;
+  padding-right: 15px;
   margin-bottom: 20px;
 }
 

@@ -151,10 +151,6 @@ nav_include: no
 </script>
 
 <style>
-  .certifications {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-  }
 
   .certification-list {
     list-style: none;
@@ -163,7 +159,7 @@ nav_include: no
 
   .certification-item {
     border-bottom: 2px solid #ddd;
-    padding: 15px;
+    padding-right: 15px;
     margin-bottom: 20px;
   }
 

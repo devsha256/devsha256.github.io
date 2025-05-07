@@ -12,3 +12,16 @@
     color: #0073e6; /* Highlight active link */
 }
   
+/* Responsive override for small screens */
+@media (max-width: 600px) {
+    main.page-content .wrapper {
+      padding: 0.5rem;
+      margin: 0.5rem;
+      max-width: 100%;
+    }
+  }
+@media (max-width: 600px) {
+    .section {
+        padding: 0.5rem;
+    }
+}

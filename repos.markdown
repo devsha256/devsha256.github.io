@@ -23,7 +23,6 @@ permalink: /repositories
   }
   .github-repos {
     font-family: Arial, sans-serif;
-    margin: 20px;
   }
 
   .repo-list {
@@ -34,7 +33,8 @@ permalink: /repositories
   .repo-card {
     display: none;
     border-bottom: 2px solid #ddd;
-    padding: 15px;
+    padding-right: 15px;
+    padding-left: 10px;
     margin-bottom: 20px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   }

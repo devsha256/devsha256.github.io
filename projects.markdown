@@ -4,7 +4,7 @@ title: Projects
 permalink: /projects/
 ---
 
-<div class="projects">
+<div class="section">
 
   <div class="pagination" id="pagination-top">
     <button id="prev-button" disabled>Previous</button>
@@ -30,10 +30,6 @@ permalink: /projects/
 </div>
 
 <style>
-  .projects {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-  }
 
   .project-list {
     list-style: none;
@@ -43,7 +39,7 @@ permalink: /projects/
   .project-item {
     /* border: 1px solid #ddd; */
     margin-bottom: 20px;
-    padding: 10px;
+    padding-right: 10px;
     display: none;
   }
 
