@@ -33,8 +33,7 @@ permalink: /repositories
   .repo-card {
     display: none;
     border-bottom: 2px solid #ddd;
-    padding-right: 15px;
-    padding-left: 10px;
+    padding: 15px;
     margin-bottom: 20px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   }
