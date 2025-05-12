@@ -68,6 +68,7 @@ permalink: /repositories
     try {
       let response = await fetch(`https://api.github.com/users/${username}/repos`);
       let repos = await response.json();
+      repos = repos.filter((repo, idx) => !repo.fork)
       if (Array.isArray(repos)) {
         const repoList = document.getElementById(listId);
         repoList.innerHTML = '';
@@ -147,6 +148,6 @@ permalink: /repositories
   }
 
   document.addEventListener("DOMContentLoaded", () => {
-    fetchGitHubRepos("devsha256", "repoList");
+    fetchGitHubRepos("{{site.github_username}}", "repoList");
   });
 </script>
