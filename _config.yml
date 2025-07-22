@@ -16,4 +16,4 @@ header_pages:
   - skills.markdown
   - projects.markdown
   - repos.markdown
-  - notice-period.markdown
+  # - notice-period.markdown

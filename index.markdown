@@ -5,11 +5,11 @@ permalink: /
 
 <h1>
   Hi there! 👋
-  <span class="inline-notice">
+  <!-- <span class="inline-notice">
     (I am <a href="https://www.linkedin.com/in/{{site.linkedin_username }}/"
       target="_blank">#OpenToWork</a> & 
     <a href="/notice-period.html">Serving Notice Period</a>)
-  </span>
+  </span> -->
 </h1>
 
 <p id="summary"></p>
@@ -18,11 +18,11 @@ permalink: /
   <a href="/projects" class="index-link">💡 Check My Projects</a>
   <a href="/credentials" class="index-link">🎓 View My Credentials</a>
   <a href="/repositories" class="index-link">💻 Browse My GitHub Repos</a>
-  <div class="resume-links">
+  <!-- <div class="resume-links">
     📄 
     <a href="/assets/resume.pdf" download class="resume-link">Download</a> /
     <a href="{{ site.resume_drive_link }}" target="_blank" class="resume-link">View 🌍 My Resume</a>
-  </div>
+  </div> -->
 </div>
 
 <script>
