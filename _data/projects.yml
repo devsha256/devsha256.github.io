@@ -1,5 +1,17 @@
 - title: System Integration and Consulting for Enhanced Healthcare Solutions
-  date: Jul 2024 - Present
+  date: Jul 2025 - Present
+  company: Accenture
+  description: Led a large-scale migration project, where I was responsible 
+    for reading and analyzing Boomi code to design and architect the migration 
+    of nine modules to the MuleSoft platform. Successfully executed the migration 
+    without supervision, demonstrating a rapid learning curve by mastering Boomi code and design patterns within three weeks.
+    Strategically designed the new MuleSoft integrations to minimize 
+    license usage and reduce customer costs, aligning with the client's demand for a cost-effective solution.
+  skills: MuleSoft Anypoint Platform,DataWeave,Boomi,Munit,Salesforce,SAP
+  slugified_skills: mulesoft-anypoint-platform,dataweave,boomi,munit,sap,salesforce
+  id: 1efa35fa-c23e-4b3e-a6e6-f2648100b35c
+- title: System Integration and Consulting for Enhanced Healthcare Solutions
+  date: Jul 2024 - Jul 2025
   company: Tata Consultancy Services
   description: I have been working as a MuleSoft consultant, designing multiple services
     for the customer’s healthcare scientific search projects. I helped connect various
