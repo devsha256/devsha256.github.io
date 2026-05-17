@@ -1,27 +1,104 @@
 ---
 layout: default
 ---
-<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+<link rel="stylesheet" href="/assets/css/blog.css">
+
+{%- assign words = content | number_of_words -%}
+{%- assign reading_time = words | divided_by: 200 | plus: 1 -%}
+
+{%- assign all_posts = site.posts | sort: 'date' | reverse -%}
+{%- assign post_index = nil -%}
+{%- for p in all_posts -%}
+  {%- if p.url == page.url -%}
+    {%- assign post_index = forloop.index0 -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- assign prev_post = nil -%}
+{%- assign next_post = nil -%}
+{%- if post_index and post_index > 0 -%}
+  {%- assign prev_idx = post_index | minus: 1 -%}
+  {%- assign prev_post = all_posts[prev_idx] -%}
+{%- endif -%}
+{%- assign next_idx = post_index | plus: 1 -%}
+{%- if next_idx < all_posts.size -%}
+  {%- assign next_post = all_posts[next_idx] -%}
+{%- endif -%}
+
+
+<article class="post-article h-entry"
+         itemscope itemtype="http://schema.org/BlogPosting">
+
+  <a href="/blog/" class="post-back-link" aria-label="Back to blog list">
+    ← Back to Blog
+  </a>
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-    <p class="post-meta">
-      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        {{ page.date | date: date_format }}
+    {%- if page.tags.size > 0 -%}
+    <div class="post-header-tags">
+      {%- for tag in page.tags -%}
+      <a href="/blog/?tag={{ tag | downcase | uri_escape }}"
+         class="post-tag-badge">{{ tag }}</a>
+      {%- endfor -%}
+    </div>
+    {%- endif -%}
+
+    <h1 class="post-main-title p-name" itemprop="name headline">
+      {{ page.title | escape }}
+    </h1>
+
+    <div class="post-meta-row">
+      <time class="dt-published"
+            datetime="{{ page.date | date_to_xmlschema }}"
+            itemprop="datePublished">
+        {{ page.date | date: "%B %-d, %Y" }}
       </time>
       {%- if page.author -%}
-        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-      {%- endif -%}</p>
+      <span class="post-meta-sep">·</span>
+      <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span class="p-author h-card" itemprop="name">{{ page.author }}</span>
+      </span>
+      {%- endif -%}
+      <span class="post-meta-sep">·</span>
+      <span class="post-reading-time">{{ reading_time }} min read</span>
+    </div>
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
 
-  {%- if site.disqus.shortname -%}
-    {%- include disqus_comments.html -%}
-  {%- endif -%}
+  <footer class="post-footer">
+    {%- if page.tags.size > 0 -%}
+    <div class="post-footer-tags">
+      <span class="post-footer-tags-label">Tags:</span>
+      {%- for tag in page.tags -%}
+      <a href="/blog/?tag={{ tag | downcase | uri_escape }}"
+         class="post-tag-badge">{{ tag }}</a>
+      {%- endfor -%}
+    </div>
+    {%- endif -%}
+
+    {%- if prev_post or next_post -%}
+    <nav class="post-nav" aria-label="Post navigation">
+      {%- if prev_post -%}
+      <a href="{{ prev_post.url | relative_url }}" class="post-nav-item prev">
+        <span class="post-nav-direction">← Newer</span>
+        <span class="post-nav-title">{{ prev_post.title | escape }}</span>
+      </a>
+      {%- else -%}
+      <div></div>
+      {%- endif -%}
+
+      {%- if next_post -%}
+      <a href="{{ next_post.url | relative_url }}" class="post-nav-item next">
+        <span class="post-nav-direction">Older →</span>
+        <span class="post-nav-title">{{ next_post.title | escape }}</span>
+      </a>
+      {%- endif -%}
+    </nav>
+    {%- endif -%}
+  </footer>
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+
 </article>

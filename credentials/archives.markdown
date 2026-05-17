@@ -29,164 +29,155 @@ nav_include: no
     {% endfor %}
   ];
 
-  function parseQuery(queryString) {
-    const params = new URLSearchParams(queryString);
+  const PAGE_SIZE_OPTIONS = [3, 6, 12, 24];
+  const DEFAULT_PAGE_SIZE = 6;
+
+  function parseQuery(qs) {
+    const params = new URLSearchParams(qs);
+    const rawSize = parseInt(params.get("size") || String(DEFAULT_PAGE_SIZE), 10);
     return {
       search: params.get("search") || "",
-      page: parseInt(params.get("page") || "1", 10)
+      page: parseInt(params.get("page") || "1", 10),
+      size: PAGE_SIZE_OPTIONS.includes(rawSize) ? rawSize : DEFAULT_PAGE_SIZE
     };
   }
 
   function ArchiveApp() {
-    const PAGE_SIZE = 6;
-    const queryParams = parseQuery(window.location.search);
-    const [search, setSearch] = useState(queryParams.search);
-    const [page, setPage] = useState(isNaN(queryParams.page) || queryParams.page < 1 ? 1 : queryParams.page);
+    const qp = parseQuery(window.location.search);
+    const [search, setSearch] = useState(qp.search);
+    const [page, setPage] = useState(isNaN(qp.page) || qp.page < 1 ? 1 : qp.page);
+    const [pageSize, setPageSize] = useState(qp.size);
 
     const filtered = useMemo(() => {
       const query = search.trim().toLowerCase();
-
       if (!query || query.length < 3) return archives;
 
       let result = archives;
-      const params = query.split(",").map(param => param.trim());
-
-      let nameTerms = [];
-      let authorityTerms = [];
-      let dateValues = [];
+      const params = query.split(",").map(p => p.trim());
+      let nameTerms = [], authorityTerms = [], dateValues = [];
 
       params.forEach(param => {
-        const nameMatch = param.match(/^name:(.*)$/);
-        const dateMatch = param.match(/^date:(\d{4}-\d{2}-\d{2})$/);
-        const authorityMatch = param.match(/^authority:(.*)$/);
-
-        if (nameMatch) {
-          nameTerms.push(nameMatch[1].trim());
-        } else if (authorityMatch) {
-          authorityTerms.push(authorityMatch[1].trim());
-        } else if (dateMatch) {
-          dateValues.push(new Date(dateMatch[1])); // Properly convert date
-        }
+        const nm = param.match(/^name:(.*)$/);
+        const dt = param.match(/^date:(\d{4}-\d{2}-\d{2})$/);
+        const au = param.match(/^authority:(.*)$/);
+        if (nm) nameTerms.push(nm[1].trim());
+        else if (au) authorityTerms.push(au[1].trim());
+        else if (dt) dateValues.push(new Date(dt[1]));
       });
 
-      let fromDate = null;
-      let toDate = null;
-
-      if (dateValues.length === 1) {
-        fromDate = dateValues[0];
-        toDate = new Date(); // Default to today
-      } else if (dateValues.length === 2) {
-        fromDate = new Date(Math.min(...dateValues.map(d => d.getTime()))); // Older date
-        toDate = new Date(Math.max(...dateValues.map(d => d.getTime()))); // Newer date
+      let fromDate = null, toDate = null;
+      if (dateValues.length === 1) { fromDate = dateValues[0]; toDate = new Date(); }
+      else if (dateValues.length >= 2) {
+        fromDate = new Date(Math.min(...dateValues.map(d => d.getTime())));
+        toDate   = new Date(Math.max(...dateValues.map(d => d.getTime())));
       }
 
-      // Apply filters
-      if (nameTerms.length) {
-        result = result.filter(a => nameTerms.some(term => a.name.toLowerCase().includes(term)));
-      }
-
-      if (authorityTerms.length) {
-        result = result.filter(a => authorityTerms.some(term => a.authority.toLowerCase().includes(term)));
-      }
-
-      if (fromDate && toDate) {
-        result = result.filter(a => {
-          const archiveDate = new Date(a.date);
-          return archiveDate >= fromDate && archiveDate <= toDate;
-        });
-      }
-
+      if (nameTerms.length) result = result.filter(a => nameTerms.some(t => a.name.toLowerCase().includes(t)));
+      if (authorityTerms.length) result = result.filter(a => authorityTerms.some(t => a.authority.toLowerCase().includes(t)));
+      if (fromDate && toDate) result = result.filter(a => {
+        const d = new Date(a.date); return d >= fromDate && d <= toDate;
+      });
       return result;
     }, [search]);
 
-
-
-    const pageCount = Math.ceil(filtered.length / PAGE_SIZE);
+    const pageCount = Math.ceil(filtered.length / pageSize);
     const isPageValid = page >= 1 && page <= pageCount;
-
     const currentItems = useMemo(() => {
       if (!isPageValid) return [];
-      return filtered.slice((page - 1) * PAGE_SIZE, page * PAGE_SIZE);
-    }, [filtered, page, isPageValid]);
+      return filtered.slice((page - 1) * pageSize, page * pageSize);
+    }, [filtered, page, pageSize, isPageValid]);
+
+    function handlePageSizeChange(newSize) {
+      setPageSize(newSize);
+      setPage(1);
+    }
 
     useEffect(() => {
       const url = new URL(window.location);
-      if (search) {
-        url.searchParams.set("search", search);
-      } else {
-        url.searchParams.delete("search");
-      }
-      if (page > 1) {
-        url.searchParams.set("page", page);
-      } else {
-        url.searchParams.delete("page");
-      }
+      search ? url.searchParams.set("search", search) : url.searchParams.delete("search");
+      page > 1 ? url.searchParams.set("page", page) : url.searchParams.delete("page");
+      pageSize !== DEFAULT_PAGE_SIZE ? url.searchParams.set("size", pageSize) : url.searchParams.delete("size");
       window.history.replaceState({}, "", url);
-    }, [search, page]);
+    }, [search, page, pageSize]);
 
-    return e("div", { className: "archives" },
+    return e("div", { className: "archive-page" },
+      e("div", { className: "creds-page-header" },
+        e("a", { href: "/credentials/", className: "back-link" }, "← Credentials"),
+        e("h1", null, "Learning History")
+      ),
+
       e("div", { className: "search-container" },
         e("input", {
           type: "text",
-          placeholder: "Search by name, date, authority...",
+          placeholder: "Search by name, date, authority…",
           value: search,
-          onChange: e => setSearch(e.target.value),
+          onChange: ev => { setSearch(ev.target.value); setPage(1); },
           className: "search-input"
         }),
         e("div", { className: "tooltip" },
           e("span", { className: "tooltip-icon" }, "?"),
           e("div", { className: "tooltip-box" },
-            e("div", null, "Search keys: (separated by comma)"),
-            e("div", null, 'Available Options'),
-            e("div", null, '- name:java'),
-            e("div", null, '- authority:udemy'),
-            e("div", null, "- date:2023-01-30")
+            e("div", null, "Search keys (comma-separated):"),
+            e("div", null, "  name:java"),
+            e("div", null, "  authority:udemy"),
+            e("div", null, "  date:2023-01-30")
           )
         )
       ),
 
-      (filtered.length === 0 || !isPageValid) ?
-        e("div", { className: "no-result" },
-          filtered.length === 0 && e("p", null, `Searched : '${search}' has no result`),
-          !isPageValid && e("p", null, `Page Number : ${page} not found`)
-        ) :
-        [
-          e("div", { className: "pagination" },
-            e("button", { onClick: () => setPage(p => Math.max(1, p - 1)), disabled: page === 1 }, "Previous"),
-            ` ${page} / ${pageCount} `,
-            e("button", { onClick: () => setPage(p => Math.min(pageCount, p + 1)), disabled: page >= pageCount }, "Next")
-          ),
-          e("ul", { className: "archive-grid" },
-            currentItems.map((arch, i) =>
-              e("li", { className: "archive-item", key: i },
-                e("a", { href: arch.cred_link, target: "_blank" },
-                  e("img", { src: arch.image, alt: arch.name, className: "arch-logo" })
-                ),
-                e("h2", { className: "arch-name" }, arch.name),
-                e("p", null, e("strong", null, "Authority: "), arch.authority),
-                e("p", null, e("strong", null, "Date: "), arch.date),
-                e("p", null, e("strong", null, "Credential ID: "), arch.credential_id),
-                e("p", { className: "verify-row" },
-                  e("strong", null, "Verify it live: "),
-                  e("a", { href: arch.drive_link, target: "_blank", className: "stars-container" },
-                    e("span", { className: "stars" },
-                      Array.from({ length: 5 }).map((_, idx) =>
-                        e("svg", { className: "star", viewBox: "0 0 24 24", width: 20, height: 20, key: idx },
-                          e("path", { d: "M12 .587l3.668 7.57L24 9.748l-6 5.848 1.415 8.258L12 19.771l-7.415 4.083L6 15.596 0 9.748l8.332-1.591z" })
+      (filtered.length === 0 || !isPageValid)
+        ? e("div", { className: "no-result" },
+            filtered.length === 0 && e("p", null, `No results for: "${search}"`),
+            !isPageValid && filtered.length > 0 && e("p", null, `Page ${page} not found`)
+          )
+        : [
+            e("div", { className: "md-pagination", key: "pag" },
+              e("button", { className: "md-btn md-btn-outlined", onClick: () => setPage(p => Math.max(1, p - 1)), disabled: page === 1 }, "← Prev"),
+              e("span", { className: "page-info" }, `${page} / ${pageCount}`),
+              e("button", { className: "md-btn md-btn-outlined", onClick: () => setPage(p => Math.min(pageCount, p + 1)), disabled: page >= pageCount }, "Next →"),
+              e("div", { className: "page-size-control" },
+                e("label", { className: "page-size-label", htmlFor: "archive-page-size" }, "Per page:"),
+                e("select", {
+                  id: "archive-page-size",
+                  className: "page-size-select",
+                  value: pageSize,
+                  onChange: ev => handlePageSizeChange(parseInt(ev.target.value, 10))
+                },
+                  PAGE_SIZE_OPTIONS.map(opt =>
+                    e("option", { key: opt, value: opt }, opt)
+                  )
+                )
+              )
+            ),
+            e("ul", { className: "archive-grid", key: "grid" },
+              currentItems.map((arch, i) =>
+                e("li", { className: "archive-item", key: i },
+                  e("a", { href: arch.cred_link, target: "_blank", rel: "noopener" },
+                    e("img", { src: arch.image, alt: arch.name, className: "arch-logo" })
+                  ),
+                  e("h2", { className: "arch-name" }, arch.name),
+                  e("p", null, e("strong", null, "Authority: "), arch.authority),
+                  e("p", null, e("strong", null, "Date: "), arch.date),
+                  arch.credential_id && e("p", null, e("strong", null, "ID: "), arch.credential_id),
+                  e("div", { className: "verify-row" },
+                    e("strong", null, "Verify: "),
+                    e("a", { href: arch.drive_link, target: "_blank", rel: "noopener", className: "stars-container" },
+                      e("span", { className: "stars" },
+                        Array.from({ length: 5 }).map((_, idx) =>
+                          e("svg", { className: "star", viewBox: "0 0 24 24", width: 18, height: 18, key: idx },
+                            e("path", { d: "M12 .587l3.668 7.57L24 9.748l-6 5.848 1.415 8.258L12 19.771l-7.415 4.083L6 15.596 0 9.748l8.332-1.591z" })
+                          )
                         )
                       )
                     )
                   )
                 )
               )
-            )
-          ),
-          e("div", { className: "total-label" }, `Total: ${filtered.length}`)
-        ],
+            ),
+            e("div", { className: "total-label", key: "total" }, `Showing ${currentItems.length} of ${filtered.length} entries`)
+          ],
 
-      e("div", { className: "instruction", style: { position: "fixed", bottom: 0, left: 0, width: "100%", backgroundColor: "#f8f8f8", color: "#555", padding: "10px", textAlign: "center", zIndex: 1000 } },
-        "Click on the verify star to see a live document."
-      )
+      e("div", { className: "instruction", key: "hint" }, "✨ Click the stars to view a live document.")
     );
   }
 

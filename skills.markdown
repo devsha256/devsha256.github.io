@@ -6,7 +6,12 @@ nav_order: 3
 ---
 
 <div class="skills-page">
-  <div class="skills-container">
+  <div class="skills-header">
+    <h1 class="skills-title">Skills & Tools</h1>
+    <p class="skills-subtitle">Technologies I've used across projects. Click a tag to explore.</p>
+  </div>
+
+  <div class="skills-cloud" id="skills-cloud">
     {% assign all_skills = "" | split: "" %}
     {% for project in site.data.projects %}
       {% assign skills_array = project.skills | split: "," %}
@@ -19,126 +24,103 @@ nav_order: 3
     {% endfor %}
     {% assign all_skills = all_skills | sort %}
 
-    <div>
-      {% for skill in all_skills %}
-        <span class="link-container">
-          <a href="/projects?skill={{ skill | slugify }}" class="skill-link">#&nbsp;{{ skill }}</a>
-        </span>
-      {% endfor %}
-    </div>
+    {% for skill in all_skills %}
+      <a href="/projects?skill={{ skill | slugify }}" class="md-chip skill-chip" data-skill="{{ skill | slugify }}">
+        # {{ skill }}
+      </a>
+    {% endfor %}
   </div>
-  <div class="instruction" style="position: fixed; bottom: 0; left: 0; width: 100%; background-color: #f8f8f8; color: #555; padding: 10px; text-align: center; z-index: 1000; animation: ziggle 0.5s infinite alternate;">Click on a tag to see projects where skill is used.</div>
-
 </div>
 
-<div class="circle" id="circleEffect"></div>
+<div class="circle-effect" id="circleEffect"></div>
 
 <style>
-  @keyframes ziggle {
-    0% {
-      transform: translateX(-5px);
-    }
-    100% {
-      transform: translateX(5px);
-    }
-  }
-  .skills-page {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    text-align: center;
-    overflow: hidden; /* To contain the expanding circle */
-    position: relative; /* For z-index context */
-  }
+.skills-page {
+  padding: 1.5rem 0 4rem;
+}
 
-  .skills-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 300px;
-    flex-wrap: wrap;
-    gap: 10px;
-    position: relative; /* To be above the circle */
-    z-index: 2;
-  }
+.skills-header {
+  margin-bottom: 2.5rem;
+}
 
-  .skill-link {
-    display: inline-block;
-    padding: 8px 15px;
-    margin: 5px;
-    text-decoration: none;
-    color: #003cff;
-    font-size: 1.2em;
-    position: relative;
-    z-index: 3; /* Ensure text is above the circle */
-    transition: color 0.3s ease;
-  }
+.skills-title {
+  margin-bottom: 0.4rem;
+}
 
-  .skill-link:hover {
-    color: #003cff; /* Keep the link color the same */
-    background-color: transparent;
-  }
+.skills-subtitle {
+  font-size: 0.95rem;
+  color: var(--md-on-surface-variant);
+}
 
-  .circle {
-    position: fixed;
-    background-color: var(--hover-color);
-    border-radius: 50%;
-    width: 95vmax; /* Use vmax to cover both width and height */
-    height: 95vmax; /* Use vmax to cover both width and height */
-    transform: translate(-50%, -50%) scale(0); /* Center the circle */
-    transition: transform 0.8s ease-out, background-color 0.3s ease, opacity 0.8s ease-out 5s; /* Add opacity transition with delay */
-    z-index: 1; /* Below the skill links */
-    top: var(--circle-y);
-    left: var(--circle-x);
-    opacity: 0; /* Start with 0 opacity */
-    pointer-events: none;
-  }
+.skills-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  align-items: flex-start;
+}
 
-  .circle.active {
-    opacity: 0.3; /* Fade in to 30% opacity */
-    transform: translate(-50%, -50%) scale(1); /* Scale to cover the page */
-    transition: transform 0.8s ease-out, background-color 0.3s ease, opacity 0.8s ease-in; /* Fade in animation */
-  }
+.skill-chip {
+  font-size: 0.875rem;
+  padding: 0.4rem 1rem;
+  font-family: var(--md-font-mono);
+  transition: background var(--md-motion-quick), color var(--md-motion-quick),
+              border-color var(--md-motion-quick), transform var(--md-motion-quick),
+              box-shadow var(--md-motion-quick);
+}
+
+.skill-chip:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(124,111,205,0.3);
+}
+
+/* Ripple circle effect */
+.circle-effect {
+  position: fixed;
+  border-radius: 50%;
+  width: 90vmax;
+  height: 90vmax;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.8s ease-out, background-color 0.3s ease, opacity 0.8s ease-out 4s;
+  z-index: -1;
+  top: var(--circle-y, 50%);
+  left: var(--circle-x, 50%);
+  opacity: 0;
+  pointer-events: none;
+  background-color: var(--hover-color, transparent);
+}
+
+.circle-effect.active {
+  opacity: 0.18;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 0.8s ease-out, background-color 0.3s ease, opacity 0.4s ease-in;
+}
 </style>
 
 <script>
+  var BRIGHT_CHARS = '89ABCDEF';
   function getRandomBrightColor() {
-    const letters = '89ABCDEF';
-    let color = '#';
-    for (let i = 0; i < 6; i++) {
-      color += letters[Math.floor(Math.random() * letters.length)];
-    }
+    var color = '#';
+    for (var i = 0; i < 6; i++) color += BRIGHT_CHARS[Math.floor(Math.random() * BRIGHT_CHARS.length)];
     return color;
   }
 
-  document.querySelectorAll('.skill-link').forEach(link => {
-    link.addEventListener('mouseenter', (e) => {
-      const randomColor = getRandomBrightColor();
-      document.documentElement.style.setProperty('--hover-color', randomColor);
+  document.querySelectorAll('.skill-chip').forEach(function(link) {
+    link.addEventListener('mouseenter', function(e) {
+      var color = getRandomBrightColor();
+      document.documentElement.style.setProperty('--hover-color', color);
 
-      const circle = document.getElementById('circleEffect');
-      const rect = e.target.getBoundingClientRect();
-      const x = rect.left + rect.width / 2;
-      const y = rect.top + rect.height / 2;
-
-      // Set the starting position of the circle
-      circle.style.setProperty('--circle-x', `${x}px`);
-      circle.style.setProperty('--circle-y', `${y}px`);
-
+      var circle = document.getElementById('circleEffect');
+      var rect = e.target.getBoundingClientRect();
+      circle.style.setProperty('--circle-x', (rect.left + rect.width / 2) + 'px');
+      circle.style.setProperty('--circle-y', (rect.top + rect.height / 2) + 'px');
       circle.classList.add('active');
 
-      // Remove the active class after 5 seconds to trigger fade out
-      setTimeout(() => {
-        circle.classList.remove('active');
-      }, 5000);
+      clearTimeout(circle._timer);
+      circle._timer = setTimeout(function() { circle.classList.remove('active'); }, 4000);
     });
 
-link.addEventListener('mouseleave', () => {
-      const circle = document.getElementById('circleEffect');
-      // If the mouse leaves before the 5-second timer, remove the active class immediately
-      circle.classList.remove('active');
-      // Optionally, reset inline styles if needed
-      // circle.style.removeProperty('--circle-x');
-      // circle.style.removeProperty('--circle-y');
+    link.addEventListener('mouseleave', function() {
+      document.getElementById('circleEffect').classList.remove('active');
     });
   });
 </script>

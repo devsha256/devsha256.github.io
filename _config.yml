@@ -11,9 +11,11 @@ resume_drive_link: "https://drive.google.com/file/d/17QT4UYfgNcnS8uLmO_vOnwcSDOq
 
 # Build settings
 theme: minima
+show_excerpts: true
 header_pages:
   - credentials/index.markdown
   - skills.markdown
   - projects.markdown
   - repos.markdown
+  - blog.markdown
   # - notice-period.markdown
