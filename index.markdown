@@ -29,7 +29,14 @@ function calculateExperience() {
   var months = (now.getFullYear() - startDate.getFullYear()) * 12 + now.getMonth() - startDate.getMonth();
   var years = Math.floor(months / 12);
   var remMonths = months % 12;
-  return years + "." + String(remMonths).padStart(2, '0');
+  
+  var yearText = years === 1 ? "Year" : "Years";
+  var monthText = remMonths === 1 ? "Month" : "Months";
+  
+  if (remMonths === 0) {
+    return years + " " + yearText;
+  }
+  return years + " " + yearText + " " + remMonths + " " + monthText;
 }
 
 document.addEventListener("DOMContentLoaded", function () {
