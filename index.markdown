@@ -32,7 +32,8 @@ function calculateExperience() {
   const months = (now.getFullYear() - startDate.getFullYear()) * 12 + now.getMonth() - startDate.getMonth();
   const years = Math.floor(months / 12);
   const remMonths = months % 12;
-  return `${years}.${remMonths.toString().padStart(2, '0')}`;
+  // Updated return format here
+  return `${years} Years ${remMonths} Months`;
 }
 
 document.addEventListener("DOMContentLoaded", function () {
