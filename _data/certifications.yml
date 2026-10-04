@@ -4,7 +4,7 @@
   credential_id: MCD-L1
   image: mcd-l1.png
   cred_link: https://trailhead.salesforce.com/en/credentials/mulesoftdeveloperi
-  drive_link: https://drive.google.com/file/d/1cAl0wKfa52RsGZ9ns6tMV3kiFRwZrfhK/view?usp=sharing
+  drive_link: https://drive.google.com/file/d/1Vran6Lc7eB843nJf83fgAPiBFU4yiTQk/view?usp=drive_link
   id: 5b7edb31-75b8-43c9-9b35-5182ef512fad
 - name: MuleSoft Certified Developer - Level 1 (Maintenance)
   authority: MuleSoft
@@ -28,15 +28,15 @@
   credential_id: MCD-L2
   image: mcd-l2.png
   cred_link: https://trailhead.salesforce.com/en/credentials/mulesoftdeveloperii
-  drive_link: https://drive.google.com/file/d/1mFQNC44-mFy6HencHvfibHNN5I-CNlOd/view?usp=sharing
+  drive_link: https://drive.google.com/file/d/12Mj-N-uz8g6dMJAisgGDcAcijljt3NF8/view?usp=drive_link
   id: ca80a7e8-e1fc-4fe5-8214-69ada59829bd
 - name: MuleSoft Certified Platform Architect - Level 1
-  authority: Oracle
+  authority: MuleSoft
   date: 2023-12-14
   credential_id: MCPA-L1
   image: mcpa-l1.png
   cred_link: https://trailhead.salesforce.com/en/credentials/mulesoftplatformarchitecti
-  drive_link: https://drive.google.com/file/d/1qE_ig0FMgPYfBSS0Lf_wlYqPDZIkz-tM/view?usp=sharing
+  drive_link: https://drive.google.com/file/d/1fmR5DpyZw8s5JIvD9FM9Kc1q-pEeS0P_/view?usp=drive_link
   id: baf53636-3055-4522-9b08-dec7c41acc2e
 - name: Edureka Certified Solution Architect (Microservices)
   authority: Edureka
